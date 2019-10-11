@@ -91,6 +91,21 @@ html, body {
 	margin-bottom: 1rem;
 }
 
+.amenities{
+	font-size: 18px;
+}
+.aboutpic1{
+	height: auto;
+	width: auto;
+	max-width: 700px;
+	max-height: 700px;
+}
+
+.figcap{
+	opacity: 0.5;
+	font-size: 12px;
+}
+
 .fa-code {
 	color: #e54d26;
 }
@@ -120,14 +135,18 @@ html, body {
 }
 
 .fa-instagram {
-	color: #517fa4;
+	color: #fb3958;
 }
 
 .fa-youtube {
 	color: #bb0000;
 }
 
-.fa-facebook:hover, .fa-twitter:hover, .fa-instagram:hover, .fa-youtube:hover {
+.fa-twitch {
+	color: #6441a5;
+}
+
+.fa-facebook:hover, .fa-twitter:hover, .fa-instagram:hover, .fa-youtube:hover, .fa-twitch:hover {
 	color: #d5d5d5;
 }
 
@@ -142,6 +161,48 @@ footer {
 	background-color: #3f3f3f;
 	color: #d5d5d5;
 	padding-top: 2rem;
+}
+
+
+.social-footer-icons {
+	margin-left: auto;
+	margin-right: 20px;
+}
+
+.fi {
+	padding-left: 20px;
+}
+
+.fo {
+	color: #d5d5d5;
+	text-align: left;
+}
+
+.fo:hover {
+	color: #e11682
+}
+
+.formstyle {
+	margin-left: 150px;
+	margin-right: 150px;
+}
+
+.imagecropper {
+    width: 300px;
+    height: 300px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 50%;
+}
+.profilepic {
+  display: inline;
+  margin-top: -50px;
+  height: auto;
+  width: 100%;
+}
+
+a:hover {
+	text-decoration: none;
 }
 
 hr.light {
