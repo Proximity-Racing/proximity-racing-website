@@ -94,11 +94,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 
     <?php
-    include 'db_conn.php';
+    include '../config/db_conn.php';
     $userData = $_SESSION['name'];
     ?>
     <?php
-      require_once('db_conn.php');
+      require_once('../config/db_conn.php');
       $id=$_SESSION['id'];
       $result3 = mysqli_query($con, "SELECT * FROM members where id='$id'");
       $row3 = mysqli_fetch_array($result3);

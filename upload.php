@@ -1,6 +1,6 @@
 <?php
 session_start();
-include_once 'db_conn.php';
+include_once '../config/db_conn.php';
 $id = $_SESSION['id'];
 if(isset($_POST['submit2'])) {
 	$file = $_FILES["file"];

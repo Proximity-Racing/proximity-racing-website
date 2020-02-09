@@ -197,7 +197,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <div class="col-md-3">
     <div class="card">
       <?php
-      include_once 'db_conn.php';
+      include_once '../config/db_conn.php';
       $result3 = mysqli_query($con, "SELECT * FROM members where name='Chris Nosowsky'");
       $row3 = mysqli_fetch_array($result3);
       $image = $row3['profilepic']
