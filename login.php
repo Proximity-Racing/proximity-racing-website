@@ -84,7 +84,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 </html>
 
 <?php
-  include 'db_conn.php';
+  include '../config/db_conn.php';
   if (mysqli_connect_errno()) {
     echo "<script> console.log('ERROR!!!');</script>";
   }

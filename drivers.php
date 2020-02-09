@@ -97,7 +97,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <div class ="container-fluid padding">
       <div class="row text-center">
         <?php 
-        include_once 'db_conn.php';
+        include_once '../config/db_conn.php';
         $query = "SELECT * FROM members ORDER BY priority+0 DESC LIMIT 1;";
         $query2 = "SELECT * FROM members ORDER BY priority+0 LIMIT 1;";
         $first = mysqli_fetch_array(mysqli_query($con, $query));

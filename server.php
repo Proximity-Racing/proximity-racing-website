@@ -8,7 +8,7 @@ $full_name = "";
 $email    = "";
 $errors = array(); 
 
-include 'db_conn.php';
+include '../config/db_conn.php';
 
 // REGISTER USER
 if (isset($_POST['reg_user'])) {
