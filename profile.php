@@ -121,10 +121,19 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       $email = $row4['email'];
     ?>
 
-
+<div class="loader-wrapper">
+    <span class="loader"><span class="loader-inner"></span></span>
+</div>
+    <script>
+        $(window).on("load",function(){
+          $(".loader-wrapper").fadeOut("slow");
+        });
+    </script>
 <div class="container-fluid padding">
-  <h2>Edit Profile</h2>
     <form class="formstyle" target = "hidden-iframe" action="upload.php" method="POST" enctype="multipart/form-data">
+      <br><br>
+      <h2>Edit Profile</h2>
+      <br>
       <div class="form-group">
         <label>iRacing Profile</label>
         <input class="form-control" type="file" name="file">
@@ -160,45 +169,45 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
 
     <div class="form-group">
-      <label>School</label>
+      <label>Education</label>
       <input class="form-control" type="text" name="school" value="<?php echo $school ?>">
     </div>
 
     <div class="form-group">
       <label>iRacing Profile</label>
-      <input class="form-control" type="text" name="iracing" value="<?php echo $iracing ?>">
+      <input class="form-control" type="url" name="iracing" value="<?php echo $iracing ?>">
     </div>
 
     <div class="form-group">
       <label>Snapchat</label>
-      <input class="form-control" type="text" name="snapchat" value="<?php echo $snapchat ?>">
+      <input class="form-control" type="url" name="snapchat" value="<?php echo $snapchat ?>">
     </div>
 
 
     <div class="form-group">
       <label>Twitter</label>
-      <input class="form-control" type="text" name="twitter" value="<?php echo $twitter ?>">
+      <input class="form-control" type="url" name="twitter" value="<?php echo $twitter ?>">
     </div>
 
     <div class="form-group">
       <label>Facebook</label>
-      <input class="form-control" type="text" name="facebook" value="<?php echo $facebook ?>">
+      <input class="form-control" type="url" name="facebook" value="<?php echo $facebook ?>">
     </div>
 
 
     <div class="form-group">
       <label>Instagram</label>
-      <input class="form-control" type="text" name="instagram" value="<?php echo $instagram ?>">
+      <input class="form-control" type="url" name="instagram" value="<?php echo $instagram ?>">
     </div>
 
     <div class="form-group">
       <label>Youtube</label>
-      <input class="form-control" type="text" name="youtube" value="<?php echo $youtube ?>">
+      <input class="form-control" type="url" name="youtube" value="<?php echo $youtube ?>">
     </div>
 
     <div class="form-group">
       <label>Twitch</label>
-      <input class="form-control" type="text" name="twitch" value="<?php echo $twitch ?>">
+      <input class="form-control" type="url" name="twitch" value="<?php echo $twitch ?>">
     </div>
 
 

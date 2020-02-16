@@ -1,7 +1,7 @@
-<!--Proximity Racing Website Coded By: Chris Nosowsky-->
-<?php session_start();
+ <!--Proximity Racing Website Coded By: Chris Nosowsky-->
+<?php
+  session_start();
 ?>
-
 <!DOCTYPE html>
 <html lang ="en">
   <head>
@@ -154,6 +154,15 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 </div>
 </div>
 
+
+<div class="loader-wrapper">
+    <span class="loader"><span class="loader-inner"></span></span>
+</div>
+    <script>
+        $(window).on("load",function(){
+          $(".loader-wrapper").fadeOut("slow");
+        });
+    </script>
 
 
 <div class="container-fluid fade fixed3">

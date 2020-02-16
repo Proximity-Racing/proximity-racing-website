@@ -6,6 +6,49 @@
   max-height: 1080px;
 }
 
+.loader-wrapper {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #242f3f;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loader {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  position: relative;
+  border: 4px solid #Fff;
+  animation: loader 2s infinite ease;
+}
+
+.loader-inner {
+  vertical-align: top;
+  display: inline-block;
+  width: 100%;
+  background-color: #fff;
+  animation: loader-inner 2s infinite ease-in;
+}
+
+@keyframes loader {
+  0% { transform: rotate(0deg);}
+  25% { transform: rotate(180deg);}
+  50% { transform: rotate(180deg);}
+  75% { transform: rotate(360deg);}
+  100% { transform: rotate(360deg);}
+}
+@keyframes loader-inner {
+  0% { height: 0%;}
+  25% { height: 0%;}
+  50% { height: 100%;}
+  75% { height: 100%;}
+  100% { height: 0%;}
+}
 
 	.fullpic{
 	height: 650px;
@@ -849,6 +892,12 @@ hr.light-100 {
 }
 
 @media (max-width: 992px) {
+	.fullpic{
+	height: 450px;
+	width: 450px;
+	max-width: 650px;
+	max-height: 650px;
+}
 	.pp {
 	margin-left: 2em;
 	margin-right: 2em;
@@ -924,6 +973,13 @@ hr.light-100 {
 	}
 }
 @media (max-width: 768px) {
+
+.fullpic{
+	height: 350px;
+	width: 350px;
+	max-width: 450px;
+	max-height: 450px;
+}
 	.pp {
 	margin-left: 2em;
 	margin-right: 2em;
@@ -1132,7 +1188,7 @@ hr.light-100 {
 
 
 	.gap {
-	margin-top: 4em;
+	margin-top: 2em;
 }
 	.pp {
 	margin-left: 1.5em;
@@ -1247,7 +1303,7 @@ hr.light-100 {
 		.sign{
 	z-index: 2;
 	position: absolute;
-	margin-left: 77%;
+	margin-left: 72%;
 	font-size: 12px;
 }
 
@@ -1255,7 +1311,7 @@ hr.light-100 {
 .prof{
 	z-index: 2;
 	position: absolute;
-	margin-left: 60%;
+	margin-left: 55%;
 	font-size: 12px;
 }
 	.newspic {
@@ -1287,7 +1343,7 @@ hr.light-100 {
 		font-size: 160%;
 	}
 	.social a {
-		font-size: 4em;
+		font-size: 3em;
 		padding: .7rem;
 	}
 	.capimgsm {

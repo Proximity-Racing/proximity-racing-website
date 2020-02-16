@@ -91,7 +91,14 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
       </div>
     </nav>
-
+    <div class="loader-wrapper">
+    <span class="loader"><span class="loader-inner"></span></span>
+</div>
+    <script>
+        $(window).on("load",function(){
+          $(".loader-wrapper").fadeOut("slow");
+        });
+    </script>
 
 <div class="aboutheader">
         <div class="col-lg-8 col-md-10 mx-auto">
