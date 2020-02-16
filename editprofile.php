@@ -112,26 +112,37 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       $position=$row3['position'];
     ?>
     <form method="POST" action="">
+      <br>
     <button type="submit" class="btn btn-primary" name="edit">Edit Profile</button>
     <?php
       if (isset($_POST['edit'])) {
         echo "<script language=\"javascript\">document.location.href='profile.php';</script>";
       }
-
     ?>
+    <div class="loader-wrapper">
+    <span class="loader"><span class="loader-inner"></span></span>
+</div>
+    <script>
+        $(window).on("load",function(){
+          $(".loader-wrapper").fadeOut("slow");
+        });
+    </script>
     </form>
-    <h4>User ID: <?php echo $id; ?></h4>
-    <div class="container-fluid padding fade">
-      <div class="text-center">
-        <h2><?php echo $fname; ?></h4>
+        <div class="container-fluid padding fade fadeinall">
+      <div class="row">
+        <div class="col-xs-12 col-md-6 text-center">
+          <img class = "img-fluid fullpic" src= <?php echo "profile_pictures/".$picture ?>>
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-6">
+                  <h2 class="mt-5"><?php echo $fname; ?></h4>
         <h5><?php echo $position; ?></h5>
-        <img class = "aye img-fluid rounded-circle" src= <?php echo "profile_pictures/".$picture ?>>
-        <br>
-        <p>Address: <?php echo $address; ?></p>
-        <p>Phone Number: <?php echo $contact; ?></p>
-        <p>Birthday: <?php echo $bday; ?></p>
-        <p>School: <?php echo $school; ?></p>
-      </div> 
+                <br>
+        <p class="lead mt-4">Address: <?php echo $address; ?></p>
+        <p class = "lead">Phone Number: <?php echo $contact; ?></p>
+        <p class = "lead">Birthday: <?php echo $bday; ?></p>
+        <p class = "lead">School: <?php echo $school; ?></p>
+        </div>
+      </div>
     </div>
     <hr class="purpleRuler fade">
     <div class="container-fluid padding fade">
