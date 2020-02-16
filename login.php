@@ -1,3 +1,6 @@
+  <?php
+  session_start();
+  ?>
   <!DOCTYPE html>
 <html lang ="en">
   <head>
@@ -106,6 +109,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
      $_SESSION['id'] = $data['idlogin'];
      $_SESSION['role'] = $data['role'];
      $_SESSION['success'] = true;
+     if(isset($_SESSION['success'])) {
+      echo "<script> console.log('SUCCESS');</script>";
+     }
      echo "<script language=\"javascript\">alert(\"Succesfully logged in! \");document.location.href='index.php';</script>";
     }else{
 
