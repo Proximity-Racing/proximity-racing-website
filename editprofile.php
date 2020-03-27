@@ -148,8 +148,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <div class="container-fluid padding fade">
       <div class="text-center">
             <h2>About</h2>
-            <p><?php echo $about; ?></p>
+            
       </div>
+      <p><?php echo $about; ?></p>
     </div>
     <hr class="purpleRuler fade">
     <div class="container-fluid padding fade">

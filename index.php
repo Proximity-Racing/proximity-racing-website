@@ -148,8 +148,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <div class="row text-center padding">
   <div class="col-xs-12 col-md-12">
     <a href="./news.php"><img src="img/blog4pic2.jpg" class="img-fluid bigpic"></a>
-    <h1 class="display-4 pp"><a class="nolink" href="./blog4.php">Daytona High Banks Claim Proximity Racing in iSCAR Competition</a></h1>
-    <p class="col-10 pad-l">While the harshness of a cold winter looms, putting an end to real-life motorsport across America for the year, virtual action ramped up...</p>
+    <h1 class="display-4 ps-sm"><a class="nolink" href="./blog4.php">Daytona High Banks Claim Proximity Racing in iSCAR Competition</a></h1>
+    <p class="mt-5 lead ps-3">While the harshness of a cold winter looms, putting an end to real-life motorsport across America for the year, virtual action ramped up...</p>
   </div>
 </div>
 </div>
@@ -175,13 +175,13 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   </div>
   <div class="col-6 col-sm-6 col-md-3">
     <br><br>
-    <a href="https://allservdoor.wixsite.com/allservdoor" target="_blank"><img src="img/AllserDoorOfficialLogo3.png" class="img-fluid picoverlay hidesmall mt-4"></a>
+    <a href="https://allservdoor.wixsite.com/allservdoor" target="_blank"><img src="img/AllserDoorOfficialLogo3.png" class="img-fluid picoverlay hidesmall mt-5"></a>
     <a href="https://www.instagram.com/treshuttlesworthphotography/" target="_blank"><img src="img/TSP.png" class="img-fluid picoverlay hidesmall mt-5"></a>
     <a href="https://www.facebook.com/splashngographics/" target="_blank"><img src="img/splashgo.png" class="img-fluid center2 picoverlay hidesmall mt-5"></a>
   </div>
   <div class="col-6 col-sm-6 col-md-3">
     <br><br><br><br>
-    <a href="https://www.facebook.com/RexfordEngineering" target="_blank"><img src="img/RE_Black.png" class="img-fluid picoverlay hidesmall"></a>
+    <a href="https://www.facebook.com/RexfordEngineering" target="_blank"><img src="img/RE_White.png" class="img-fluid picoverlay hidesmall"></a>
     <a href="https://www.facebook.com/kirkwoodtransportation" target="_blank"><img src="img/KT2.png" class="img-fluid picoverlay hidesmall mt-5"></a>
     <a href="https://soundcloud.com/graham-cracker-yuh" target="_blank"><img src="img/GramCrackerFinal.png" class="img-fluid picoverlay hidesmall mt-5"></a>
   </div>
@@ -289,7 +289,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 
 <!-- Connect -->
-<div class="container-fluid padding fade">
+<div class="container-fluid padding fade gap gap-bot">
 <div class="row text-center padding">
   <div class="col-12">
     <h1>Connect</h1>

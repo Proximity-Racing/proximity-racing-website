@@ -119,10 +119,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <div class="col-xs-12 col-md-6 text-center">
           <img class = "img-fluid fullpic" src= <?php echo "profile_pictures/".$picture ?>>
         </div>
-        <div class="col-xs-12 col-sm-12 col-md-6">
-                  <h2 class="mt-5"><?php echo $fname; ?></h4>
+        <div class="col-xs-12 col-sm-12 col-md-6 mobile-ml3">
+        <h2 class="mt-5"><?php echo $fname; ?></h4>
         <h5><?php echo $position; ?></h5>
-                <br>
+        <br>
         <p class="lead mt-4">Address: <?php echo $address; ?></p>
         <p class = "lead">Phone Number: <?php echo $contact; ?></p>
         <p class = "lead">Birthday: <?php echo $bday; ?></p>
@@ -134,8 +134,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <div class="container-fluid padding fade">
       <div class="text-center">
             <h2>About</h2>
-            <p class = "pp lead mt-4"><?php echo $about; ?></p>
+            
       </div>
+      <p class = "pp lead mt-4"><?php echo $about; ?></p>
     </div>
     <hr class="purpleRuler fade">
     <div class="container-fluid padding fade">

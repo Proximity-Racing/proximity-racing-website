@@ -89,25 +89,18 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       </div>
     </nav>
 
-
-
-
-
-
 <div class ="container-fluid padding">
-<div class ="row padding text-center">
+<div class ="row padding ">
   <div class="col-md-12">
-    <h1 class="display-4">Contact Us</h1>
+    <h1 class="display-4 text-center">Contact Us</h1>
     <br>
-    <p>Interested in joining Proximity Racing? Looking to find out more information about us or have a question? Feel free to fill out our form below and we will get back to you as soon as we can! </p>
-    <br>
-    <br>
-
+    <p class="ml-4 mr-4">Interested in joining Proximity Racing? Looking to find out more information about us or have a question? Feel free to fill out our form below and we will get back to you as soon as we can! </p>
 </div>
 </div>
 </div>
 
 <div class = "container-fluid padding">
+  <div class="col-md-12 col-sm-12 col-xs-12">
   <form class = "formstyle" method="post" action="mailto:ProximityRacing@gmail.com">
     <div class="form-group">
       <label for="exampleFormControlInput1">Email address</label>
@@ -136,6 +129,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
     </p>
   </form>
+</div>
 </div>
 <?php include 'footer.php'; ?>
 </body>

@@ -102,27 +102,55 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       </div>
     </div>
   </header>
-  <!-- Latest Blog on Top -->
-  <div class="container-fluid">
-    <div class="row padding">
-      <div class="col-md-6">
-        <img class="newspic img-fluid" src="img/blog4pic2.jpg" style="float:left;">
+  <button class="btn btn-primary"><a class="nolink" href="./write.php">Write</a></button>
+
+  <?php
+    include_once('../config/db_conn.php');
+    $sql = "SELECT * FROM proximityracing.blogs ORDER BY id DESC";
+    $res = mysqli_query($con, $sql) or die(mysqli_error());
+    $posts = "";
+
+    if(mysqli_num_rows($res) > 0) {
+      while($row = mysqli_fetch_assoc($res)) {
+        $id = $row['id'];
+        $title = $row['title'];
+        $content = $row['content'];
+        $date = $row['date'];
+        $blogger = $row['blogger'];
+        $status = $row['status'];
+        $readtime = $row['readtime'];
+        $mainpic = $row['mainpic'];
+        $smalldate = explode(" ", $date);
+        $smallmonth = substr($smalldate[0], 0, 3);
+        $daylen = strtolower(strlen($smalldate[1]) - 1);
+        $smallday = substr($smalldate[1], 0, (int) $daylen);
+        $admin = "";
+        $posts .= "<div class='container-fluid'>
+    <div class='row padding'>
+      <div class='col-md-6'>
+        <img class='newspic img-fluid' src='blogpics/blogpics$id/$mainpic' style='float:left;''>
       </div>
-      <div class="col-md-6">
-        <div class="padding-top">
-        <p class="sm">Tre Shuttlesworth</p>
-        <p class="sm">Nov 27 | 4 min</p>
-        <a class="nolink" href="blog4.php"><h2 class="split">Daytona High Banks Claim Proximity Racing in iSCAR Competition</h2>
-        <p class="split">While the harshness of a cold winter looms, putting an end to real-life motorsport across America for the year, virtual action ramped up...</p>
+      <div class='col-md-6'>
+        <div class='padding-top'>
+        <p class='sm'>$blogger</p>
+        <p class='sm'>$smallmonth $smallday | $readtime min</p>
+        <a class='nolink' href='blog.php?id=$id'><h2 class='split'>$title</h2>
+        <p class='split'>While the harshness of a cold winter looms, putting an end to real-life motorsport across America for the year, virtual action ramped up...</p>
 
         </a>
         </div>
       </div>
     </div>
-  </div>
+  </div>";
+      }
+      if ($status == "PUBLISHED") {
+        echo $posts;
+      }
+    } else {
+      echo "There are no posts to display!";
+    }
 
-
-
+  ?>
   <div class="container-fluid">
     <div class="row padding">
       <div class="col-md-6">

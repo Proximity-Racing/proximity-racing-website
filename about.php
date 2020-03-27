@@ -112,38 +112,37 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <div class ="container-fluid padding fade">
 <div class ="row padding">
   <div class="col-md-12">
-    <p class="ps">Proximity Racing is a sanctioned iRacing.com motorsport team. Founded November 10th, 2016, our team started with five members.  After our 24 Hours of Daytona run coming short in 2017, we reformed our team, expanding our member base. After months worth of preparation for the 2017 6 Hours of The Glen, our two teams managed to score our first team endurance wins. We brought this confidence into the 2018 24 Hours of Daytona and ended up winning our class.</p>
+    <p class="ps-2 mt-5 lead">Proximity Racing is a sanctioned iRacing.com motorsport team. Founded November 10th, 2016, our team started with five members.  After our 24 Hours of Daytona run coming short in 2017, we reformed our team, expanding our member base. After months worth of preparation for the 2017 6 Hours of The Glen, our two teams managed to score our first team endurance wins. We brought this confidence into the 2018 24 Hours of Daytona and ended up winning our class.</p>
     <br>
     <br>
-    <p class="ps">Our success doesn't just come on the track, but it also develops off the track. We make sure our team members are academically successful and ready for the business world. We train our members on how to effectively market themselves and the team. The majority of our members are in colleges all across the United States.</p>
+    <p class="ps-2 lead">Our success doesn't just come on the track, but it also develops off the track. We make sure our team members are academically successful and ready for the business world. We train our members on how to effectively market themselves and the team. The majority of our members are in colleges all across the United States.</p>
     <br>
     <br>
-    <p class="ps">We continue to grow our team. We have a passion for racing. By preparing for the events, we ensure that our team will produce successful results.</p>
+    <p class="ps-2 lead">We continue to grow our team. We have a passion for racing. By preparing for the events, we ensure that our team will produce successful results.</p>
 </div>
 </div>
 </div>
-    <hr class="purpleRuler">
- <div class="container-fluid padding fade">
+ <div class="container-fluid padding fade gap">
  <div class="row padding">
-    <div class="col-md-12">
+    <div class="col-md-12 mt-5">
       <h1 class="display-4 text-center">A Culture</h1>
       <br>
 
-      <img class="center bigpic" src="img/teampic.jpg">
+      <img class="center bigpic mt-5" src="img/teampic.jpg">
       <br>
       <br>
-      <p class = "ps">Proximity Racing has become engulfed into the racing community. With 15+ active drivers on the team racing regularly, it's been in our blood since the start. But we are more than a race team; We are family. It’s all about the long lasting friendships, building the necessary skills and giving back.</p>
+      <p class = "ps-2 lead mt-5">Proximity Racing has become engulfed into the racing community. With 15+ active drivers on the team racing regularly, it's been in our blood since the start. But we are more than a race team; We are family. It’s all about the long lasting friendships, building the necessary skills and giving back.</p>
       <br>
-      <p class="ps">From late night discords chats, fun league racing to sending each other funny memes and even playing other games such as Minecraft, Rocket League, Overwatch, etc. there’s always a way to build connections on the team.</p>
+      <p class="ps-2 lead">From late night discords chats, fun league racing to sending each other funny memes and even playing other games such as Minecraft, Rocket League, Overwatch, etc. there’s always a way to build connections on the team.</p>
       <br>
-      <p class="ps">We gurantee you that we will make you a better racer. We help build new skills and sharpen old ones. No matter what series, car or track you prefer; We got you covered. Some of our notable board members and current drivers have been in the racing world for over a decade. Some of them even race in the real world. There is never not a resource to ask advice for.</p>
+      <p class="ps-2 lead">We gurantee you that we will make you a better racer. We help build new skills and sharpen old ones. No matter what series, car or track you prefer; We got you covered. Some of our notable board members and current drivers have been in the racing world for over a decade. Some of them even race in the real world. There is never not a resource to ask advice for.</p>
       <br>
-      <p class="ps">When joining our family, you get access to many replay files over multiple tracks, telemetry and real world knowledge setups and all our paint schemes, suits, helmets that are professionally designed. On top of that, you receive access to the discord, receive a website profile get email subscription access and get included in shoutouts on all our social media accounts. You would also get to represent our incredible sponsors on the track!</p>
+      <p class="ps-2 lead">When joining our family, you get access to many replay files over multiple tracks, telemetry and real world knowledge setups and all our paint schemes, suits, helmets that are professionally designed. On top of that, you receive access to the discord, receive a website profile get email subscription access and get included in shoutouts on all our social media accounts. You would also get to represent our incredible sponsors on the track!</p>
      </div>
     </div>
    </div>
 
-  <div class="container-fluid fixed5 fade">
+  <div class="container-fluid fixed6 fade">
   <div class="row">
           <div class="text-center col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 gap">
         <h1 class="fixedbackgroundheader">eNASCAR Ignite Series</h1>
@@ -157,35 +156,55 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   </div>
 </div>
 
- <div class="container-fluid padding fade">
+ <div class="container-fluid padding fade gapbig">
  <div class="row padding text-center">
     <div class="col-md-12">
       <h1 class="display-4">Amenities</h1>
     </div>
       
  </div>
- </div>
 
  <div class="container-fluid padding fade amenities">
  <div class="row padding">
       <div class="col-xs-12 col-md-6">
        <ul class="amenities">
-        <li>Professional Training</li>
-        <li>Access to replays, setups, telemetry files and tools</li>
+        <li class="lead">Professional Training</li>
+        <li class="lead">Access to replays, setups, telemetry files and tools</li>
         </ul>
       </div>
       <div class="col-xs-12 col-md-6">
        <ul class="amenities">
-        <li>Paint scheme library access</li>
-        <li>Representing our top sponsors</li>
-        <li>Merchandise</li>
+        <li class="lead">Paint scheme library access</li>
+        <li class="lead">Representing our top sponsors</li>
+        <li class="lead">Merchandise</li>
        </ul>
      </div>
 </div>
 </div>
-<hr class="purpleRuler">
-<div class="container-fluid padding fade">
- <div class="row padding">
+</div>
+
+  <div class="container-fluid fixed6 fade gapbig">
+  <div class="row">
+          <div class=" col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 gap">
+            <h1 class="fixedbackgroundheader pp">iRacing Road to Pro</h1>
+                  <p class="lead pp fixedbackgroundtext mt-5">This year we are making a run for one of the biggest series, Road to Pro. It is a way for our drivers to attain a Pro license.</p>
+      <br><br>
+            <a target="_blank" href="#"><button type="button" class="btn btn-primary btn-lg pp-btn">Pro Series Page</button></a>
+
+    </div>
+    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 gap">
+        
+        <a href="https://www.iracing.com/nascarignite/" target="_blank"><img src="img/rtp.png" class="img-fluid picoverlay mt-5"></a>
+    </div>
+  </div>
+</div>
+
+
+<div class="container-fluid padding fade gap">
+  <div class="text-center">
+    <h1 class="display-4">Current Stats</h1>
+  </div>
+ <div class="row padding gapbig">
       <div class="Count col-xs-12 col-md-6">
         <h1 class="text-center">Board Members</h1>
         <h1 class="Counter text-center" data-count = 8>0</h1>
@@ -236,9 +255,7 @@ $(window).scroll(function() {
     });
 </script>
 
-<hr class="purpleRuler">
-
-<section class="back fade">
+<section class="back fade gapbiggest gap-bot">
   <div class="col-md-12 text-center">
     <h1 style="font-size: 50px;">Our Timeline</h1>
   </div>

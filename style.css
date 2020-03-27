@@ -6,6 +6,12 @@
   max-height: 1080px;
 }
 
+.blogtextarea {
+	height: 500px;
+	resize: none;
+	width: 615px;
+}
+
 .loader-wrapper {
   width: 100%;
   height: 100%;
@@ -173,6 +179,14 @@
 	margin-bottom: 8em;
 }
 
+.gapbig {
+	margin-top: 10em !important;
+}
+
+.gapbiggest {
+	margin-top: 20em !important;
+}
+
 
 .fixed2 {
 	background:linear-gradient( rgba(0,0,0,0.5), rgba(0, 0, 0, 0.5) ),url(./img/blog4pic2.jpg);
@@ -192,6 +206,9 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+    -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
 }
 
 .fixedbackgroundheader {
@@ -214,6 +231,9 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+    -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
 }
 
 
@@ -224,6 +244,17 @@
 	  /* Create the parallax scrolling effect */
 	background-attachment: fixed;
 	background-repeat: no-repeat;
+}
+.fixed6 {
+	background:linear-gradient( rgba(0,0,0,0.5), rgba(0, 0, 0, 0.5) ),url(./img/rtphunter.jpg );
+	height: 900px;
+	  /* Create the parallax scrolling effect */
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	  background-size: cover;
+    -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
 }
 
 
@@ -444,24 +475,43 @@ html, body {
 }
 
 .ps {
-	margin-left: 20em;
-	margin-right: 20em;
+	margin-left: 10em;
+	margin-right: 10em;
 }
-
-.pp {
-	margin-left: 5em;
-	margin-right: 5em;
-}
-
-.pp-btn {
+	.ps-2 {
+		margin-left: 15em;
+		margin-right: 15em;
+	}
+	.ps-3 {
+		margin-left: 20em;
+		margin-right: 20em;
+	}
+.ps-sm {
 	margin-left: 6em;
 	margin-right: 6em;
 }
+.pp {
+	margin-left: 2em;
+	margin-right: 2em;
+}
+
+.pp-btn {
+	margin-left: 2em;
+	margin-right: 2em;
+}
+
 
 .partnerspic {
 	transition: transform .3s ease;
-	max-width: 60%;
-	max-height: 70%;
+	max-width: 50%;
+	max-height: 60%;
+}
+
+.card-horizontal {
+    display: flex;
+    flex: 1 1 auto;
+    width: 80%;
+
 }
 
 .inline {
@@ -519,10 +569,18 @@ html, body {
 	height: 500px;
 
 }
+
 .aboutheader {
 	background-image: url('img/Team1Pic3.png');
-			background-repeat: no-repeat;
-		background-position: -0px;
+	background-repeat: no-repeat;
+	background-position: 0px;
+	height: 450px;
+}
+.partnerheader {
+	background-image: url('img/rtphunter2.jpg');
+	background-repeat: no-repeat;
+	background-size: 110%;
+	background-position: 0px;
 	height: 450px;
 }
 
@@ -556,6 +614,17 @@ html, body {
 .nolink:hover {
 	color: #FFC300;
 }
+
+
+.nolinkw {
+	color: #222;
+	text-decoration: none;
+}
+
+.nolinkw:hover {
+	color: #FFC300;
+}
+
 .amenities{
 	font-size: 18px;
 	margin-left: 10%;
@@ -939,8 +1008,12 @@ hr.light-100 {
 	font-size: 10px;
 }
 	.ps {
-		margin-left: 10em;
-		margin-right: 10em;
+		margin-left: 8em;
+		margin-right: 8em;
+	}
+	.ps-2 {
+		margin-left: 15em;
+		margin-right: 15em;
 	}
 	.amenities {
 		margin-left: 1em;
@@ -973,7 +1046,14 @@ hr.light-100 {
 	}
 }
 @media (max-width: 768px) {
+	.formstyle {
+	margin-left: 50px;
+	margin-right: 50px;
+}
 
+.mobile-ml3 {
+	margin-left: 3em;
+}
 .fullpic{
 	height: 350px;
 	width: 350px;
@@ -1082,8 +1162,8 @@ hr.light-100 {
 	max-height: 450px;
 }
 		.ps {
-		margin-left: 3em;
-		margin-right: 3em;
+		margin-left: 1.5em;
+		margin-right: 1.5em;
 	}
 	.aboutheader {
 		background-image: url('img/Team1Pic3.png');
@@ -1175,7 +1255,42 @@ hr.light-100 {
 	}
 }
 @media (max-width: 576px) {
+		.formstyle {
+	margin-left: 1em;
+	margin-right: 1em;
+}
 
+	.pp-btn {
+	margin-left: 1.5em;
+	margin-right: 1.5em;
+}
+	.fixed2 {
+	background:linear-gradient( rgba(0,0,0,0.5), rgba(0, 0, 0, 0.5) ),url(./img/blog4pic2.jpg) no-repeat center fixed;
+	height: 900px;
+
+	  /* Create the parallax scrolling effect */
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+}
+		.fixed3 {
+	background: linear-gradient( rgba(0,0,0,0.5), rgba(0, 0, 0, 0.5) ),url(./img/parkerpic1.png);
+	height: 1200px;
+
+	  /* Create the parallax scrolling effect */
+	background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+    -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+}
+.mobile-ml3 {
+	margin-left: 3em;
+}
 .picoverlay {
 	max-width: 80%;
 	max-height: 80%;
@@ -1190,6 +1305,8 @@ hr.light-100 {
 	.gap {
 	margin-top: 2em;
 }
+
+
 	.pp {
 	margin-left: 1.5em;
 	margin-right: 1.5em;
@@ -1279,8 +1396,8 @@ hr.light-100 {
 	max-height: 350px;
 }
 		.ps {
-		margin-left: 3em;
-		margin-right: 3em;
+		margin-left: 1.5em;
+		margin-right: 1.5em;
 	}
 	.aboutheader {
 		background-image: url('img/Team1Pic3.png');
@@ -1317,8 +1434,8 @@ hr.light-100 {
 	.newspic {
 		margin-top: 10%;
 		margin-right: 10%;
-		width: 100%;
-		height: 100%;
+		width: 80%;
+		height: 80%;
 	}
 	.carousel-caption {
 		top: 40%;
