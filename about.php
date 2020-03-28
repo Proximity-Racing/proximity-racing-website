@@ -142,7 +142,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
    </div>
 
-  <div class="container-fluid fixed6 fade">
+  <div class="container-fluid fixed5 fade">
   <div class="row">
           <div class="text-center col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 gap">
         <h1 class="fixedbackgroundheader">eNASCAR Ignite Series</h1>

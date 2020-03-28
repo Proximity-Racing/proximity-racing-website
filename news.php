@@ -102,109 +102,20 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       </div>
     </div>
   </header>
-  <button class="btn btn-primary"><a class="nolink" href="./write.php">Write</a></button>
+  <?php if(isset($_SESSION['role'])): ?>
+    <?php if($_SESSION['role'] == 'ADMIN'): ?>
+    <button class="btn btn-primary"><a class="nolink" href="./write.php">Write</a></button>
+    <?php else: ?>
+    <?php endif; ?>
+  <?php else: ?>
+    <?php endif; ?>
 
-  <?php
-    include_once('../config/db_conn.php');
-    $sql = "SELECT * FROM proximityracing.blogs ORDER BY id DESC";
-    $res = mysqli_query($con, $sql) or die(mysqli_error());
-    $posts = "";
 
-    if(mysqli_num_rows($res) > 0) {
-      while($row = mysqli_fetch_assoc($res)) {
-        $id = $row['id'];
-        $title = $row['title'];
-        $content = $row['content'];
-        $date = $row['date'];
-        $blogger = $row['blogger'];
-        $status = $row['status'];
-        $readtime = $row['readtime'];
-        $mainpic = $row['mainpic'];
-        $smalldate = explode(" ", $date);
-        $smallmonth = substr($smalldate[0], 0, 3);
-        $daylen = strtolower(strlen($smalldate[1]) - 1);
-        $smallday = substr($smalldate[1], 0, (int) $daylen);
-        $admin = "";
-        $posts .= "<div class='container-fluid'>
-    <div class='row padding'>
-      <div class='col-md-6'>
-        <img class='newspic img-fluid' src='blogpics/blogpics$id/$mainpic' style='float:left;''>
-      </div>
-      <div class='col-md-6'>
-        <div class='padding-top'>
-        <p class='sm'>$blogger</p>
-        <p class='sm'>$smallmonth $smallday | $readtime min</p>
-        <a class='nolink' href='blog.php?id=$id'><h2 class='split'>$title</h2>
-        <p class='split'>While the harshness of a cold winter looms, putting an end to real-life motorsport across America for the year, virtual action ramped up...</p>
 
-        </a>
-        </div>
-      </div>
-    </div>
-  </div>";
-      }
-      if ($status == "PUBLISHED") {
-        echo $posts;
-      }
-    } else {
-      echo "There are no posts to display!";
-    }
-
+  <?php 
+    include_once('./newsBlog.php');
+  
   ?>
-  <div class="container-fluid">
-    <div class="row padding">
-      <div class="col-md-6">
-        <img class="newspic img-fluid" src="img/parkerwin.png" style="float:left;">
-      </div>
-      <div class="col-md-6">
-        <div class="padding-top">
-        <p class="sm">Tre Shuttlesworth</p>
-        <p class="sm">Aug 25 | 4 min</p>
-        <a class="nolink" href="blog.php"><h2 class="split">Parker Retzlaff Nets a Controversial Ignite Win from Thompson</h2>
-        <p class="split">Round 3 of the eNASCAR Ignite Series saw iRacing's best young oval racers head to the one-groove Thompson Speedway last Thursday Night...</p>
-
-        </a>
-        </div>
-      </div>
-    </div>
-  </div>
-
-
-  <div class="container-fluid">
-    <div class="row padding">
-      <div class="col-md-6">
-        <img class="newspic img-fluid" src="img/bristolwin.jpg" style="float:left;">
-      </div>
-      <div class="col-md-6">
-        <div class="padding-top">
-        <p class="sm">Tre Shuttlesworth</p>
-        <p class="sm">Aug 19 | 4 min</p>
-        <a class="nolink" href="blog2.php"><h2 class="split">Retzlaff Continues Streak of Perfection with Bristol Win</h2>
-        <p class="split">The Virtual Last Great Coliseum in Bristol, Tennessee played host the eNASCAR Ignite Series last Thursday where Parker Retzlaff continued his hot streak, leading flag to flag while Lucas Cram...</p>
-
-        </a>
-        </div>
-      </div>
-    </div>
-  </div>
-
-
-    <div class="container-fluid">
-    <div class="row padding">
-      <div class="col-md-6">
-        <img class="newspic img-fluid" src="img/richmondwin.jpg" style="float:left;">
-      </div>
-      <div class="col-md-6">
-        <div class="padding-top">
-        <p class="sm">Tre Shuttlesworth</p>
-        <p class="sm">Aug 10 | 4 min</p>
-        <a class="nolink" href="blog3.php"><h2 class="split">Parker Retzlaff Sets Pace in eNASCAR Ignite Series Opener</h2>
-        <p class="split">Thursday marked the opening round to the eNASCAR Ignite Series Playoff Opener, with Parker Retzlaff commanding raw pace over the field in...</p>
-        </a>
-        </div>
-      </div>
-    </div>
-  </div>
 <?php include 'footer.php'; ?>
 </body>
 </html>

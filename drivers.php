@@ -91,7 +91,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 
     <div class="col-md-12">
-      <h1 class="text-center display-4">Our Team</h1>
+      <h1 class="text-center display-4" style="margin-top: 1.5em; margin-bottom: 1.5em;font-weight:500">Our Team</h1>
     </div>
 
     <div class ="container-fluid padding">
