@@ -205,7 +205,7 @@
 	height: 900px;
 
 	  /* Create the parallax scrolling effect */
-	background-attachment: fixed;
+	position: fixed;
 	background-repeat: no-repeat;
 }
 
@@ -214,7 +214,7 @@
 	height: 900px;
 
 	  /* Create the parallax scrolling effect */
-	background-attachment: fixed;
+	position: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -239,7 +239,7 @@
 	height: 800px;
 
 	  /* Create the parallax scrolling effect */
-	background-attachment: fixed;
+	position: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -254,14 +254,14 @@
 	height: 900px;
 
 	  /* Create the parallax scrolling effect */
-	background-attachment: fixed;
+	position: fixed;
 	background-repeat: no-repeat;
 }
 .fixed6 {
 	background:linear-gradient( rgba(0,0,0,0.5), rgba(0, 0, 0, 0.5) ),url(./img/rtphunter.jpg );
 	height: 900px;
 	  /* Create the parallax scrolling effect */
-	background-attachment: fixed;
+	position: fixed;
 	background-repeat: no-repeat;
 	  background-size: cover;
     -webkit-background-size: cover;
@@ -1117,7 +1117,7 @@ hr.light-100 {
 	height: 900px;
 
 	  /* Create the parallax scrolling effect */
-	background-attachment: fixed;
+	position: fixed;
 	background-repeat: no-repeat;
 }
 		.fixed3 {
@@ -1125,7 +1125,7 @@ hr.light-100 {
 	height: 1200px;
 
 	  /* Create the parallax scrolling effect */
-	background-attachment: fixed;
+	position: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1319,7 +1319,7 @@ hr.light-100 {
 	height: 900px;
 
 	  /* Create the parallax scrolling effect */
-	background-attachment: fixed;
+	position: fixed;
 	background-repeat: no-repeat;
 	  -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -1330,7 +1330,7 @@ hr.light-100 {
 	height: 1200px;
 
 	  /* Create the parallax scrolling effect */
-	background-attachment: fixed;
+	position: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1395,7 +1395,7 @@ hr.light-100 {
     background-position: -750px 0px !important;
     background-color: rgba(0,0,0,0.5) !important;
 	  /* Create the parallax scrolling effect */
-	background-attachment: fixed;
+	position: fixed;
 	background-blend-mode: color;
   	background-position: center;
  	 background-repeat: no-repeat;
@@ -1413,7 +1413,7 @@ hr.light-100 {
     background-color: rgba(0,0,0,0.5) !important;
 	background-image: url(./img/ignite1.png);
 	  /* Create the parallax scrolling effect */
-	background-attachment: fixed;
+	position: fixed;
 	background-blend-mode: color;
 	    -ms-background-size: cover;
     -o-background-size: cover;
@@ -1464,7 +1464,7 @@ hr.light-100 {
 	background-position: -500px 0px;
 	background-color: rgba(0,0,0,0.5) !important;
 	  /* Create the parallax scrolling effect */
-	background-attachment: fixed;
+	position: fixed;
 	background-blend-mode: color;
 	background-repeat: no-repeat;
 	    -ms-background-size: cover;
