@@ -94,7 +94,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <div class="col-md-12">
     <h1 class="display-4 text-center">Contact Us</h1>
     <br>
-    <p class="ml-4 mr-4">Interested in joining Proximity Racing? Looking to find out more information about us or have a question? Feel free to fill out our form below and we will get back to you as soon as we can! </p>
+    <p class="ps lead">Interested in joining Proximity Racing? Looking to find out more information about us or have a question? Feel free to fill out our form below and we will get back to you as soon as we can! </p>
 </div>
 </div>
 </div>

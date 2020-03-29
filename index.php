@@ -110,12 +110,15 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
       </div>
     </nav>
-    <div id="noback" class="video-background">
+    <div id="noback" class="video-background mobile-hide">
         <div id="noback">
           <video id="noback" autoplay loop muted playsinline>
             <source src="video/prox.mp4" type="video/mp4">
           </video>
         </div>
+    </div>
+    <div class="container-fluid fixed7 desktop-hide">
+
     </div>
     <div class="caption text-center">
       <h1 class="captionfadein">WELCOME TO</h1>
@@ -129,7 +132,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 gap">
       <p class="lead pp fixedbackgroundtext">Proximity Racing is a sanctioned iRacing.com motorsport team. Founded November 10th, 2016, our team started with five members.  After our 24 Hours of Daytona run coming short in 2017, we reformed our team, expanding our member base.</p>
       <br><br>
-            <a href="./about.php"><button type="button" class="btn btn-secondary btn-lg pp-btn">Learn More</button></a>
+            <a href="./about.php"><button type="button" class="btn btn-primary btn-lg pp-btn">Learn More</button></a>
     </div>
   </div>
 </div>
@@ -148,7 +151,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <div class="row text-center padding">
   <div class="col-xs-12 col-md-12">
     <a href="./news.php"><img src="img/blog4pic2.jpg" class="img-fluid bigpic"></a>
-    <h1 class="display-4 ps-sm"><a class="nolink" href="./blog4.php">Daytona High Banks Claim Proximity Racing in iSCAR Competition</a></h1>
+    <h1 class="mobile-header ps-sm"><a class="nolink" href="./blog4.php">Daytona High Banks Claim Proximity Racing in iSCAR Competition</a></h1>
     <p class="mt-5 lead ps-3">While the harshness of a cold winter looms, putting an end to real-life motorsport across America for the year, virtual action ramped up...</p>
   </div>
 </div>
@@ -171,7 +174,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <br><br><br>
     <h1 class="text-center fixedbackgroundheader">Our Partners</h1>
     <p class="lead pp mt-5" style="color:white;  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;font-size: 18px !important;">We are extremely fortunate to have our partners on board our vehicles for the 2020 season. Not only do they help us by providing opportunities to develop our talented drivers, but we help them get the best exposure on and off the track by frequently promoting their business on social media and using industry leading marketing strategies.</p>
-    <a href="./about.php"><button type="button" class="btn btn-secondary btn-lg pp mt-5">Learn More</button></a>
+    <a href="./about.php"><button type="button" class="btn btn-primary btn-lg pp mt-5">Learn More</button></a>
   </div>
   <div class="col-6 col-sm-6 col-md-3">
     <br><br>
@@ -274,7 +277,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
      <div class="col-xs-12 col-md-6 gap">
         <br><br>
     <h1 class="text-center" style="font-size: 55px; color: white;text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;">Current Leagues</h1>
-    <p class ="lead pp mt-5" style="color:white;font-size: 25px !important;text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;">Leagues are a fun way to get exposure, win races and championships and ultimately build our drivers skill level. Here are some of the current leagues we run.</p>
+    <p class ="lead pp-x mt-5" style="color:white;font-size: 25px !important;text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;">Leagues are a fun way to get exposure, win races and championships and ultimately build our drivers skill level. Here are some of the current leagues we run.</p>
   </div>
   <div class="col-6 col-md-3 gap">
     <img class ="img-fluid leaguepics mt-4" src="img/norse.png">

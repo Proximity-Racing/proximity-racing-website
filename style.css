@@ -11,7 +11,10 @@
 	resize: none;
 	width: 615px;
 }
-
+.specialHeaderAbout {
+	color: white; 
+	font-size: 100px;
+}
 .loader-wrapper {
   width: 100%;
   height: 100%;
@@ -22,6 +25,11 @@
   display:flex;
   justify-content: center;
   align-items: center;
+}
+.partnersHeaderFont {
+	color: white;
+	font-size: 100px;
+	font-weight:bold; 
 }
 
 .loader {
@@ -79,6 +87,10 @@
 	color: none;
 	background: none !important;
 	border: none !important;
+}
+
+.mr-desktop {
+	margin-left: 0.9em;
 }
 
 .video-wrap {
@@ -212,7 +224,7 @@
 }
 
 .fixedbackgroundheader {
-	font-size: 55px;
+	font-size: 55px !important;
 	color: white;
 	text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }
@@ -493,6 +505,12 @@ html, body {
 .pp {
 	margin-left: 2em;
 	margin-right: 2em;
+}
+
+.pp-x {
+	margin-left: 2em;
+	margin-right: 2em;
+	font-size: 20px !important;
 }
 
 .pp-btn {
@@ -935,10 +953,34 @@ hr.light-100 {
 	margin-top: .8rem;
 	margin-bottom: 1rem;
 }
+@media only screen and (min-width: 600px) {
+.desktop-hide {
+	display: none;
+}
+.mobile-hide {
+	display: block !important;
+}
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
 /*----Medeia Querries----*/
 
 @media (max-width: 1300px) {
+
 
 		.sign{
 	z-index: 2;
@@ -1051,9 +1093,7 @@ hr.light-100 {
 	margin-right: 50px;
 }
 
-.mobile-ml3 {
-	margin-left: 3em;
-}
+
 .fullpic{
 	height: 350px;
 	width: 350px;
@@ -1205,7 +1245,9 @@ hr.light-100 {
 	font-size: 12px;
 }
 
-
+	.sm {
+		margin-left: 0%;
+	}
 
 	.navbar-nav li{
 		padding: 8px;
@@ -1255,6 +1297,14 @@ hr.light-100 {
 	}
 }
 @media (max-width: 576px) {
+	.ps-sm {
+	margin-left: 0em;
+	margin-right: 0em;
+}
+	.ps-3 {
+	margin-left: 0em;
+	margin-right: 0em;
+}
 		.formstyle {
 	margin-left: 1em;
 	margin-right: 1em;
@@ -1301,18 +1351,140 @@ hr.light-100 {
 	transform: scale(1.05);
 }
 
-
+	.display-4 {
+		font-size: 50px !important;
+	}
+.split {
+	margin-left: 0%;
+	margin-right: 0%;
+}
+.caption {
+	position: absolute;
+	top: 24%;
+	width: 100%;
+	color: white;
+}
 	.gap {
 	margin-top: 2em;
 }
-
-
-	.pp {
-	margin-left: 1.5em;
-	margin-right: 1.5em;
-	font-size: 20px !important;
+.mr-desktop {
+	margin-left: 0em;
+}
+.partnerspic {
+	transition: transform .3s ease;
+	max-width: 80%;
+	max-height: 90%;
 }
 
+	.pp {
+	margin-left: 0em;
+	margin-right: 0em;
+	font-size: 20px !important;
+}
+	.pp-x {
+	margin-left: 0.5em;
+	margin-right: 0.5em;
+	font-size: 20px !important;
+}
+.mobile-header {
+	font-size: 35px;
+}
+.fixed4 {
+	background-image :url(./img/bathurst.png);
+	height: 800px;
+    background-position: -750px 0px !important;
+    background-color: rgba(0,0,0,0.5) !important;
+	  /* Create the parallax scrolling effect */
+	background-attachment: fixed;
+	background-blend-mode: color;
+  	background-position: center;
+ 	 background-repeat: no-repeat;
+ 	 	    -ms-background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+}
+@media (max-width: 576px) {
+.fixed5 {
+	height: 900px;
+    background-position: -100px 0px;
+    background-color: rgba(0,0,0,0.5) !important;
+	background-image: url(./img/ignite1.png);
+	  /* Create the parallax scrolling effect */
+	background-attachment: fixed;
+	background-blend-mode: color;
+	    -ms-background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+
+.fixed7 {
+	background-size: 310% !important;
+	background-image :url(./img/ProximityTruck2.png);
+	height: 650px;
+    background-position: -380px 0px !important;
+    background-color: rgba(0,0,0,0.5) !important;
+	  /* Create the parallax scrolling effect */
+	background-blend-mode: color;
+  	background-position: center;
+ 	 background-repeat: no-repeat;
+ 	 	    -ms-background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+
+.padding-top {
+	margin-top:0%;
+}
+.headerimg {
+	background-image: url('img/parkerwinheader.png');
+	width: auto;
+	height: auto;
+		background-position: -200px 0px;
+	  /* Create the parallax scrolling effect */
+	background-repeat: no-repeat;
+	    -ms-background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    background-size: cover;
+
+}
+
+.fixed6 {
+	background-image: url(./img/rtphunter.jpg );
+	height: 900px;
+	background-size: cover !important;
+	background-position: -500px 0px;
+	background-color: rgba(0,0,0,0.5) !important;
+	  /* Create the parallax scrolling effect */
+	background-attachment: fixed;
+	background-blend-mode: color;
+	background-repeat: no-repeat;
+	    -ms-background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+	.gap-mobile {
+	margin-top: 8em;
+}
+
+.mobile-hide {
+	display: none;
+}
+
+.specialHeaderAbout {
+	color: white; 
+	font-size: 70px;
+}
 	.captionfadein {
     animation: fadein 7s;
     -moz-animation: fadein 7s; /* Firefox */
@@ -1329,6 +1501,19 @@ hr.light-100 {
       height: 60px;
       overflow: hidden;
     }
+
+    .amenities{
+	font-size: 18px;
+	margin-left: 0%;
+	list-style: circle;
+}
+.partnerheader {
+	background-image: url('img/rtphunter2.jpg');
+	background-repeat: no-repeat;
+	background-size: 200%;
+	background-position: -100px 0px;
+	height: 350px;
+}
       #dates li {
         list-style: none;
         float: left;
@@ -1347,7 +1532,8 @@ hr.light-100 {
               font-size: 28px;
               color: #8829cb;
         }
-
+}
+@media (max-width: 576px) {
     #next,
     #prev {
       position: absolute;
@@ -1396,13 +1582,17 @@ hr.light-100 {
 	max-height: 350px;
 }
 		.ps {
-		margin-left: 1.5em;
-		margin-right: 1.5em;
+		margin-left: 0em;
+		margin-right: 0em;
+	}
+		.ps-2 {
+		margin-left: 0em;
+		margin-right: 0em;
 	}
 	.aboutheader {
 		background-image: url('img/Team1Pic3.png');
 		background-repeat: no-repeat;
-		background-position: -700px -150px;
+		background-position: -800px -150px;
 		height: 300px;
 	}
 
@@ -1423,7 +1613,12 @@ hr.light-100 {
 	margin-left: 72%;
 	font-size: 12px;
 }
-
+.partnersHeaderFont {
+	margin-top: 1.5em;
+	color: white; 
+	font-size: 50px; 
+	font-weight:bold; 
+}
 
 .prof{
 	z-index: 2;
@@ -1432,10 +1627,11 @@ hr.light-100 {
 	font-size: 12px;
 }
 	.newspic {
-		margin-top: 10%;
-		margin-right: 10%;
-		width: 80%;
-		height: 80%;
+		margin-top: 0% !important;
+		margin-left: 0%;
+		margin-right: 0% !important;
+		width: 100%;
+		height: 100%;
 	}
 	.carousel-caption {
 		top: 40%;
@@ -1460,7 +1656,7 @@ hr.light-100 {
 		font-size: 160%;
 	}
 	.social a {
-		font-size: 3em;
+		font-size: 2.5em;
 		padding: .7rem;
 	}
 	.capimgsm {

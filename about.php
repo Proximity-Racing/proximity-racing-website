@@ -102,7 +102,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 <div class="aboutheader">
         <div class="col-lg-8 col-md-10 mx-auto">
-            <h1 style="color: white; font-size: 100px;">About Us</h1>
+            <h1 class="specialHeaderAbout">About Us</h1>
             <br>
             <br>
         </div>
@@ -145,7 +145,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <div class="container-fluid fixed5 fade">
   <div class="row">
           <div class="text-center col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 gap">
-        <h1 class="fixedbackgroundheader">eNASCAR Ignite Series</h1>
+        <h1 class="fixedbackgroundheader mr-desktop">eNASCAR Ignite Series</h1>
         <a href="https://www.iracing.com/nascarignite/" target="_blank"><img src="img/ignitelogo.jpg" class="img-fluid picoverlay mt-5"></a>
     </div>
     <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 gap">
@@ -186,7 +186,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <div class="container-fluid fixed6 fade gapbig">
   <div class="row">
           <div class=" col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 gap">
-            <h1 class="fixedbackgroundheader pp">iRacing Road to Pro</h1>
+            <h1 class="fixedbackgroundheader mr-desktop">iRacing Road to Pro</h1>
                   <p class="lead pp fixedbackgroundtext mt-5">This year we are making a run for one of the biggest series, Road to Pro. It is a way for our drivers to attain a Pro license.</p>
       <br><br>
             <a target="_blank" href="#"><button type="button" class="btn btn-primary btn-lg pp-btn">Pro Series Page</button></a>
@@ -209,7 +209,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <h1 class="text-center">Board Members</h1>
         <h1 class="Counter text-center" data-count = 8>0</h1>
      </div>
-      <div class="Count col-xs-12 col-md-6">
+      <div class="Count col-xs-12 col-md-6 gap-mobile">
         <h1 class="text-center">Active Drivers</h1>
         <h1 class="Counter text-center" data-count = 15>0</h1>
      </div>
@@ -255,7 +255,7 @@ $(window).scroll(function() {
     });
 </script>
 
-<section class="back fade gapbiggest gap-bot">
+<section class="mobile-hide back fade gapbiggest gap-bot">
   <div class="col-md-12 text-center">
     <h1 style="font-size: 50px;">Our Timeline</h1>
   </div>

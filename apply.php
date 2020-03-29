@@ -98,10 +98,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   </div>
 
 
-  <div class="container-fluid">
-    <div class="row padding">
+  <div class="container-fluid mt-5">
+    <div class="row padding" style="margin-right: 15em; margin-left: 15em;">
     <div class="col-md-12">
-      <p class="ps">
+      <p>
         We are actively recruiting for any positions avaliable throughout the calendar year. If you find any interest in the positions listed below and feel like you would be a good fit for our team, fill out the form <a href="#">here.</a> The applications steps are as follows:
 
         1) When we receive your application, we will evaluate it with our current team and determine if you would be a good fit for the positon
@@ -114,28 +114,33 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   </div>
   </div>
 <hr class="purpleRuler">
-<div class="container-fluid">
-<div class="row padding">
-  <div class="col-md-12">
+<div class="container-fluid mt-5">
+<div class="row padding" style="margin-right: 15em; margin-left: 15em;">
+  <div class="col-md-12" >
     <h1>Setup Builder</h1>
-    <p class="ps">
+    <p>
       We are looking for both a road and oval setup builder for the upcoming season. If you are familiar with setup building, telemetry, team testing or vehicle dynamics, this is the position for you. Your responsibilities will include delivering high quality setups for endurance races, official open series races and league races.
     </p>
   </div>
 
   <div class="col-md-12">
     <h1>Marketing</h1>
-    <p class="ps">In this role, you will be engaging in all the board member meetings, reaching out to anyone interested in joining the team, helping with getting our brand out there on social media, posting on the forums, and reaching out to potential sponsors.</p>
+    <p>In this role, you will be engaging in all the board member meetings, reaching out to anyone interested in joining the team, helping with getting our brand out there on social media, posting on the forums, and reaching out to potential sponsors.</p>
   </div>
 
   <div class="col-md-12">
     <h1>Photographer</h1>
-    <p class="ps">This role is for someone who is inspired by photographer, likes to take pictures, specifically racing related. In this role, you will be responsible for the teams screenshots used on social media, blogs and the website. Must be able to run iRacing graphics on high settings.</p>
+    <p>This role is for someone who is inspired by photographer, likes to take pictures, specifically racing related. In this role, you will be responsible for the teams screenshots used on social media, blogs and the website. Must be able to run iRacing graphics on high settings.</p>
   </div>
 
    <div class="col-md-12">
     <h1>Videographer</h1>
-    <p class="ps">Someone who has an interest in making videos, recording, editing videos for the internet, etc. In this role, you will be creating weekly highlights, promotional videos, coordinating our livestreams and helping with the camera angles for livestreaming/videos. If you are passionate about creating videos, specifically racing related then this is the role for you. Having a portfolio such as a Twitch or Youtube channel is a plus. Attended or attending college for film/video is a plus.</p>
+    <p>Someone who has an interest in making videos, recording, editing videos for the internet, etc. In this role, you will be creating weekly highlights, promotional videos, coordinating our livestreams and helping with the camera angles for livestreaming/videos. If you are passionate about creating videos, specifically racing related then this is the role for you. Having a portfolio such as a Twitch or Youtube channel is a plus. Attended or attending college for film/video is a plus.</p>
+  </div>
+
+  <div class="col-md-12">
+    <h1>UX/UI Designer</h1>
+    <p>Someone that has a base knowledge of HTML and CSS/SASS. Able to work on the website components and conduct layout models and adjustments. Quick on feedback to fix any underlying compatibility issues. Ability to work in Adobe Illustrator and Photoshop along with preferred knowledge in wireframe tools such as InVision or Wireframe.cc</p>
   </div>
 </div>
 </div>

@@ -94,7 +94,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 <div class="partnerheader">
         <div class="col-lg-8 col-md-10 mx-auto">
-            <h1 style="color: white; font-size: 100px; font-weight:bold; ">Our Partners</h1>
+            <h1 class="partnersHeaderFont">Our Partners</h1>
             <br>
             <br>
         </div>

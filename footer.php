@@ -19,7 +19,7 @@
               <a class="fi" href="https://www.twitch.tv/ProximityRacing" target="_blank"><i class="fo fab fa-twitch" aria-hidden="true"></i></a>
           </div>
         </div>
-        <div class="text-center">
+        <div class="text-center mt-4">
         <h5>&copy; 2020 ProximityRacing.com</h5>
         <h5>Created by Chris Nosowsky</h5>
         </div>
