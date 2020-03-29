@@ -297,7 +297,7 @@
 	font-size: 100px;
 }
     .pagewide {
-    	background-attachment: fixed;
+    	position: fixed;
     width: 100%;
     top: 5px;
     	background-color: #343a40;
