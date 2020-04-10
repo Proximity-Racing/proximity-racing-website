@@ -53,7 +53,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
     <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
       <div class="container-fluid">
-        <a class="navbar-brand" href="./"><img src="img/prlogo1.png"></a>
+        <a class="navbar-brand" href="./"><img src="img/ProximityRacing_Logo_Word Bright Blue.png"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse"
         data-target="#navbarResponsive">
           <span class="navbar-toggler-icon"> </span>
@@ -125,7 +125,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
  <div class="container-fluid padding fade gap">
  <div class="row padding">
     <div class="col-md-12 mt-5">
-      <h1 class="display-4 text-center">A Culture</h1>
+      <h1 style="font-weight: 500;" class="display-4 text-center">A Culture</h1>
       <br>
 
       <img class="center bigpic mt-5" src="img/teampic.jpg">
@@ -146,7 +146,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <div class="row">
           <div class="text-center col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 gap">
         <h1 class="fixedbackgroundheader mr-desktop">eNASCAR Ignite Series</h1>
-        <a href="https://www.iracing.com/nascarignite/" target="_blank"><img src="img/ignitelogo.jpg" class="img-fluid picoverlay mt-5"></a>
+        <a href="https://www.iracing.com/nascarignite/" target="_blank"><img src="img/ignitelogo.png" class="img-fluid picoverlay mt-5"></a>
     </div>
     <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 gap">
       <p class="lead pp fixedbackgroundtext">Proximity Racing competes in the NASCAR sanctioned series, Ignite. In the 2019 season, our drivers placed all in the top 30, making them all eligible to compete for the championship prize.</p>
@@ -254,10 +254,9 @@ $(window).scroll(function() {
       })
     });
 </script>
-
-<section class="mobile-hide back fade gapbiggest gap-bot">
+<section class="time-line-color  mobile-hide back fade gapbiggest pad-sm pad-bot">
   <div class="col-md-12 text-center">
-    <h1 style="font-size: 50px;">Our Timeline</h1>
+    <h1 style="font-size: 50px; color:white;">Our Timeline</h1>
   </div>
   <div id="timeline">
     <ul id="dates">
@@ -268,28 +267,28 @@ $(window).scroll(function() {
     </ul>
     <ul id="issues">
       <li id="2016">
-        <img class ="override" src="images/pr1.png" width="256" height="256" />
+        <img class ="override" src="images/pr1.png" width="220" height="220" />
         <h1 class="headerOverride">November 10, 2016</h1>
-        <p>Proximity Racing Founded</p>
+        <p class="text-white">Proximity Racing Founded</p>
       </li>
       <li id="2017">
         <img class = "override" src="img/winglen.jpg" width="384" height="216" />
         <h1 class="headerOverride">2017</h1>
         <br><br>
-        <p>6 Hours of Watkins Glen - Split 2 GT3 Class Winner<br>
+        <p class="text-white">6 Hours of Watkins Glen - Split 2 GT3 Class Winner<br>
         6 Hours of Watkins Glen - Split 6 GT3 Class Winner</p>
       </li>
       <li id="2018">
         <img class="override" src="images/Proximity24HoursWin.png" width="467" height="205" />
         <h1 class="headerOverride">2018</h1>
         <br>
-        <p>24 Hours of Daytona - Split 14 GT3 Class Winner</p>
+        <p class="text-white">24 Hours of Daytona - Split 14 GT3 Class Winner</p>
       </li>
       <li id="2019">
         <img class="override" src="img/winner42ss.jpg" width="384" height="216" />
         <h1 class="headerOverride">2019</h1>
         <br><br>
-        <p class="poverride">iSCAR JTP Graphix Series Season 1 Champion<br>
+        <p class="poverride text-white">iSCAR JTP Graphix Series Season 1 Champion<br>
           iSCAR Street Stock Series Season 6 Champion<br>
           iSCAR Tolsma Designs Truck Series Season 2 Champion <br>
           iSCAR Street Stock Series Season 8 Champion<br>
@@ -303,7 +302,6 @@ $(window).scroll(function() {
     <a href="#" id="prev">-</a>
   </div>
 </section>
-
 <?php
 include_once 'footer.php'; ?>
   </body>

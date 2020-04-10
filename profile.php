@@ -51,7 +51,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- Navigation -->
     <nav class="navbar navbar-expand-md navbar-dark bg-dark stivky-top">
       <div class="container-fluid">
-        <a class="navbar-brand" href="./"><img src="img/prlogo1.png"></a>
+        <a class="navbar-brand" href="./"><img src="img/ProximityRacing_Logo_Word Bright Blue.png"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse"
         data-target="#navbarResponsive">
           <span class="navbar-toggler-icon"> </span>

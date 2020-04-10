@@ -72,7 +72,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <nav class="navbar navbar-expand-md navbar-dark bg-dark sticky-top">
 
       <div class="container-fluid">
-        <a class="navbar-brand" href="./"><img src="img/prlogo1.png"></a>
+        <a class="navbar-brand" href="./"><img src="img/ProximityRacing_Logo_Word Bright Blue.png"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse"
         data-target="#navbarResponsive">
           <span class="navbar-toggler-icon"> </span>
@@ -110,33 +110,27 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
       </div>
     </nav>
-    <div id="noback" class="video-background mobile-hide">
-        <div id="noback">
-          <video id="noback" autoplay loop muted playsinline>
-            <source src="video/prox.mp4" type="video/mp4">
-          </video>
-        </div>
+    <div class="container-fluid fixed7">
     </div>
-    <div class="container-fluid fixed7 desktop-hide">
 
-    </div>
     <div class="caption text-center">
       <h1 class="captionfadein">WELCOME TO</h1>
-      <img class="captionfadein capimgsm" src="img/prlogo1.png">
+      <img class="captionfadein capimgsm" src="img/ProximityRacing_Logo_Word Bright Blue.png">
     </div>
+  </div>
   <div class="container-fluid fixed4 fade">
   <div class="row">
-          <div class="text-center col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 gap">
-        <h1 class="fixedbackgroundheader">Who We Are</h1>
+    <div class="text-center col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 gap">
+        <iframe width="660" height="415" src="https://www.youtube.com/embed/MwxcyNvFPcA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
     <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 gap">
+      <h1 class="fixedbackgroundheader ml-5 mb-3">Who We Are</h1>
       <p class="lead pp fixedbackgroundtext">Proximity Racing is a sanctioned iRacing.com motorsport team. Founded November 10th, 2016, our team started with five members.  After our 24 Hours of Daytona run coming short in 2017, we reformed our team, expanding our member base.</p>
       <br><br>
             <a href="./about.php"><button type="button" class="btn btn-primary btn-lg pp-btn">Learn More</button></a>
     </div>
   </div>
 </div>
-
 
 <!-- Welcome -->
 <div class="container-fluid padding fade">
@@ -173,7 +167,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <div class="col-sm-12 col-md-6">
     <br><br><br>
     <h1 class="text-center fixedbackgroundheader">Our Partners</h1>
-    <p class="lead pp mt-5" style="color:white;  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;font-size: 18px !important;">We are extremely fortunate to have our partners on board our vehicles for the 2020 season. Not only do they help us by providing opportunities to develop our talented drivers, but we help them get the best exposure on and off the track by frequently promoting their business on social media and using industry leading marketing strategies.</p>
+    <p class="lead pp mt-5" style="color:white;  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;font-size: 22px !important;">We are extremely fortunate to have our partners on board our vehicles for the 2020 season. Not only do they help us by providing opportunities to develop our talented drivers, but we help them get the best exposure on and off the track by frequently promoting their business on social media and using industry leading marketing strategies.</p>
     <a href="./about.php"><button type="button" class="btn btn-primary btn-lg pp mt-5">Learn More</button></a>
   </div>
   <div class="col-6 col-sm-6 col-md-3">
@@ -185,7 +179,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <div class="col-6 col-sm-6 col-md-3">
     <br><br><br><br>
     <a href="https://www.facebook.com/RexfordEngineering" target="_blank"><img src="img/RE_White.png" class="img-fluid picoverlay hidesmall"></a>
-    <a href="https://www.facebook.com/kirkwoodtransportation" target="_blank"><img src="img/KT2.png" class="img-fluid picoverlay hidesmall mt-5"></a>
     <a href="https://soundcloud.com/graham-cracker-yuh" target="_blank"><img src="img/GramCrackerFinal.png" class="img-fluid picoverlay hidesmall mt-5"></a>
   </div>
 </div>
@@ -272,7 +265,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 
 <!-- Two Column Section -->
-<div class="container-fluid fade fixed2 jumbotron">
+<!-- <div class="container-fluid fade fixed2 jumbotron">
 <div class="row">
      <div class="col-xs-12 col-md-6 gap">
         <br><br>
@@ -290,7 +283,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 </div>
 </div>
 
-
+ -->
 <!-- Connect -->
 <div class="container-fluid padding fade gap gap-bot">
 <div class="row text-center padding">

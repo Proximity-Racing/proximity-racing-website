@@ -11,6 +11,24 @@
 	resize: none;
 	width: 615px;
 }
+
+.fixed7 {
+	background-size: 120% !important;
+	background-image :url(./img/ProximityTruck2.png);
+	height: 900px;
+    background-position: -380px 0px !important;
+    background-color: rgba(0,0,0,0.0) !important;
+	  /* Create the parallax scrolling effect */
+	  background-attachment: fixed;
+	background-blend-mode: color;
+  	background-position: center;
+ 	 background-repeat: no-repeat;
+ 	 	    -ms-background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
 .specialHeaderAbout {
 	color: white; 
 	font-size: 100px;
@@ -104,10 +122,10 @@
 
 
 .captionfadein {
-    animation: fadein 7s;
-    -moz-animation: fadein 7s; /* Firefox */
-    -webkit-animation: fadein 7s; /* Safari and Chrome */
-    -o-animation: fadein 7s; /* Opera */
+    animation: fadein 5s;
+    -moz-animation: fadein 5s; /* Firefox */
+    -webkit-animation: fadein 5s; /* Safari and Chrome */
+    -o-animation: fadein 5s; /* Opera */
 }
 @keyframes fadein {
     from {
@@ -199,6 +217,25 @@
 	margin-top: 20em !important;
 }
 
+.pad {
+	padding-top: 8em;
+}
+
+.pad-bot {
+	padding-bottom: 8em;
+}
+.pad-sm {
+	padding-top: 2em;
+}
+
+.padbig {
+	padding-top: 10em !important;
+}
+
+.padbiggest {
+	padding-top: 20em !important;
+}
+
 
 .fixed2 {
 	background:linear-gradient( rgba(0,0,0,0.5), rgba(0, 0, 0, 0.5) ),url(./img/blog4pic2.jpg);
@@ -221,6 +258,10 @@
     -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
+}
+
+.time-line-color {
+	background-color: #272b2e;
 }
 
 .fixedbackgroundheader {
@@ -272,7 +313,7 @@
 
 .caption {
 	position: absolute;
-	top: 38%;
+	top: 30%;
 	width: 100%;
 	color: white;
 }
@@ -514,8 +555,8 @@ html, body {
 }
 
 .pp-btn {
-	margin-left: 2em;
-	margin-right: 2em;
+	margin-left: 2.5em;
+	margin-right: 2.5em;
 }
 
 
@@ -732,7 +773,7 @@ html, body {
       }
         #dates a {
           line-height: 38px;
-          color: #222;
+          color: white;
           padding-bottom: 10px;
         }
         #dates .selected {
@@ -882,7 +923,6 @@ html, body {
 
 
 footer {
-	background-color: #3f3f3f;
 	color: #d5d5d5;
 	padding-top: 2rem;
 }
@@ -954,6 +994,9 @@ hr.light-100 {
 	margin-bottom: 1rem;
 }
 @media only screen and (min-width: 600px) {
+	.whoweare {
+		margin-top: 5em;
+	}
 .desktop-hide {
 	display: none;
 }
@@ -1146,7 +1189,7 @@ hr.light-100 {
       }
         #dates a {
           line-height: 38px;
-          color: #222;
+          color: white;
           padding-bottom: 1px;
         }
         #dates .selected {
@@ -1427,7 +1470,7 @@ hr.light-100 {
 	background-image :url(./img/ProximityTruck2.png);
 	height: 650px;
     background-position: -380px 0px !important;
-    background-color: rgba(0,0,0,0.5) !important;
+    background-color: rgba(0,0,0,0.0) !important;
 	  /* Create the parallax scrolling effect */
 	background-blend-mode: color;
   	background-position: center;
@@ -1486,10 +1529,10 @@ hr.light-100 {
 	font-size: 70px;
 }
 	.captionfadein {
-    animation: fadein 7s;
-    -moz-animation: fadein 7s; /* Firefox */
-    -webkit-animation: fadein 7s; /* Safari and Chrome */
-    -o-animation: fadein 7s; /* Opera */
+    animation: fadein 5s;
+    -moz-animation: fadein 5s; /* Firefox */
+    -webkit-animation: fadein 5s; /* Safari and Chrome */
+    -o-animation: fadein 5s; /* Opera */
     font-size: 34px !important;
 }
 	.headertext {

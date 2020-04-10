@@ -51,7 +51,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- Navigation -->
     <nav class="navbar navbar-expand-md navbar-dark bg-dark stivky-top">
       <div class="container-fluid">
-        <a class="navbar-brand" href="./"><img src="img/prlogo1.png"></a>
+        <a class="navbar-brand" href="./"><img src="img/ProximityRacing_Logo_Word Bright Blue.png"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse"
         data-target="#navbarResponsive">
           <span class="navbar-toggler-icon"> </span>
@@ -89,8 +89,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
       </div>
     </nav>
-    <div class='embedsocial-instagram' data-ref="36dac7c74429c4f4854699c10ecf0fe2c4e7aaf4"></div><script>(function(d, s, id){var js; if (d.getElementById(id)) {return;} js = d.createElement(s); js.id = id; js.src = "https://embedsocial.com/embedscript/in.js"; d.getElementsByTagName("head")[0].appendChild(js);}(document, "script", "EmbedSocialInstagramScript"));</script>
-<?php include 'footer.php'; ?>
+    <div class='embedsocial-instagram' data-ref="0987152a255a53208148e54f749db459d9ef5373"></div><script>(function(d, s, id){var js; if (d.getElementById(id)) {return;} js = d.createElement(s); js.id = id; js.src = "https://embedsocial.com/embedscript/in.js"; d.getElementsByTagName("head")[0].appendChild(js);}(document, "script", "EmbedSocialInstagramScript"));</script>
+    <?php include 'footer.php'; ?>
 
 
   </body>

@@ -1,5 +1,5 @@
       <!-- Footer -->
-  <footer>
+  <footer class="bg-dark">
     <div class="container-fluid padding fade">
     <div class="row">
 

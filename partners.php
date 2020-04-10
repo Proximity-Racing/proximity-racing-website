@@ -53,7 +53,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- Navigation -->
     <nav class="navbar navbar-expand-md navbar-dark bg-dark stivky-top">
       <div class="container-fluid">
-        <a class="navbar-brand" href="./"><img src="img/prlogo1.png"></a>
+        <a class="navbar-brand" href="./"><img src="img/ProximityRacing_Logo_Word Bright Blue.png"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse"
         data-target="#navbarResponsive">
           <span class="navbar-toggler-icon"> </span>
@@ -111,16 +111,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           </p>
         </div>
         <div class="col-md-6 inline">
-          <a href="https://www.facebook.com/kirkwoodtransportation" target="_blank">
-          <img class="img-fluid center partnerspic" src="img/KT2.png">
-          </a>
-          <br>
-          <br>
-          <p class="ps">
-            Kirkwood Transportation is an Owner Operator Company Owned by Todd Kirkwood providing SERVICES FOR all 48 States and Canada Hauling Refrigerated Products to Customers.
-          </p>
-        </div>
-        <div class="col-md-6 inline">
           <a href="https://www.instagram.com/treshuttlesworthphotography/" target="_blank">
           <img class="img-fluid center partnerspic" src="img/TSP.png">
           </a>
@@ -154,6 +144,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             If you are interested in rock, EDM or just music in general, then Graham Cracker will not fail to dissapoint. As a growing hobbyist for music, Grant Marquart writes, sings and produces his own music which all happens at home. He also has influence from German artists!
           </p>
         </div>
+        <div class="col-md-6 inline"></div>
       </div>
     </div>
     <?php include 'footer.php'; ?>
