@@ -13,7 +13,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" href="img/favicon.png" type="image/png">
-    <title>News | Proximity Racing</title>
+    <title>Prox Analytics | Proximity Racing</title>
     <meta name="description" content="Proximity Racing is a sanctioned iRacing.com motorsport team">
     <meta name="robots" content="index, follow" />
     <meta name="keywords" content="proximity racing, proximity, proximityracing, iracing, chris nosowsky">
@@ -34,7 +34,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       gtag('config', 'UA-155164803-1');
     </script>
   </head>
-  <body>
+  <body style="background-color: #050505;">
     <!-- Google Tag Manager (noscript) -->
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TBKGS5L"
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
@@ -50,52 +50,12 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <?php 
       include_once 'navbar.php';
     ?>
-    <header class="masthead headerimg">
-    <div class="overlay"></div>
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-8 col-md-10 mx-auto">
-          <div class="post-heading">
-            <h1 style="color: white; font-size: 100px;">News</h1>
-            <br>
-            <br>
-          </div>
-        </div>
-      </div>
-    </div>
-  </header>
-  <?php if(isset($_SESSION['role'])): ?>
-    <?php if($_SESSION['role'] == 'ADMIN'): ?>
-    <button class="btn btn-primary"><a class="nolink" href="./write.php">Write</a></button>
-    <?php else: ?>
-    <?php endif; ?>
-  <?php else: ?>
-    <?php endif; ?>
 
-
-
-  <?php 
-    include_once('./newsBlog.php');
-  
-  ?>
-
-  <div class='container-fluid'>
-    <div class='row padding'>
-      <div class='col-md-6'>
-        <img class='newspic img-fluid' src='blogpics/blogpics$id/$mainpic' style='float:left;''>
-      </div>
-      <div class='col-md-6'>
-        <div class='padding-top'>
-        <p class='sm'>$blogger</p>
-        <p class='sm'>$smallmonth $smallday | $readtime min</p>
-        <a class='nolink' href='blog.php?id=$id'><h2 class='split'>$title</h2>
-        <p class='split'>While the harshness of a cold winter looms, putting an end to real-life motorsport across America for the year, virtual action ramped up...</p>
-
-        </a>
-        </div>
-      </div>
-    </div>
+<div class="proxanalyticsheader captionfadein">
   </div>
-<?php include 'footer.php'; ?>
-</body>
-</html>
+
+  <h2 class="text-center">Coming Soon.</h2>
+  <br>
+  <br>
+  </body>
+  </html>

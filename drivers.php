@@ -47,49 +47,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <a class="fo sign" href="login.php">Login</a>
         <a class="fo prof" href="register.php">Sign Up</a>
         <?php endif; ?></div>
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-md navbar-dark bg-dark stivky-top">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="./"><img src="img/ProximityRacing_Logo_Word Bright Blue.png"></a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse"
-        data-target="#navbarResponsive">
-          <span class="navbar-toggler-icon"> </span>
-        </button>
-        <div class ="collapse navbar-collapse" id="navbarResponsive">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="./">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./about.php">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./news.php">News</a>
-            </li>
-            <li class="nav-item active">
-              <a class="nav-link" href="./drivers.php">Members</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./gallery.php">Gallery</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./partners.php">Partners</a>
-            </li>
-            <li class="dropdown nav-item">
-            <a href="./contact.php" data-toggle="dropdown" class="dropdown-toggle nav-link">Contact</a>
-            <ul class="dropdown-menu" id="menu1">
-              <li><a class = "fo" href="./contact.php">Contact Us</a></li>
-              <li><a class = "fo" href="./apply.php">Apply</a></li>
-              <li><a class = "fo" href="./sponsor.php">Become a Sponsor</a></li>
-            </ul>
-          </li>
-          </ul>
-        </div>
-
-      </div>
-    </nav>
-
-
+    <?php 
+      include_once 'navbar.php';
+    ?>
     <div class="col-md-12">
       <h1 class="text-center display-4" style="margin-top: 1.5em; margin-bottom: 1.5em;font-weight:500">Our Team</h1>
     </div>

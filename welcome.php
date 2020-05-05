@@ -38,7 +38,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   	<h2>Welcome to Proximity Racing!</h2>
   	<br>
 
-  	<p>Thank you for registering. We will review your profile and determine your status. If you are on the team, you will be able to be viewed on the "Members" page. If you are not on the team, however, you will still access to your account, it just won't be visible to others.</p>
+  	<p>Thank you for registering. We will review your profile and determine your status. If you are on the team, you will be able to be viewed on the "Members" page. If you are not on the team, however, you will still access to your account after clicking the activation link sent to your email, it just won't be visible to others.
+    </p>
   	</div>
   </div>
 	
