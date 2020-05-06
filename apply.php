@@ -83,6 +83,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <p>
       We are looking for both a road and oval setup builder for the upcoming season. If you are familiar with setup building, telemetry, team testing or vehicle dynamics, this is the position for you. Your responsibilities will include delivering high quality setups for endurance races, official open series races and league races.
     </p>
+    <p>If interested, fill out the application form <a href="https://forms.gle/G3HZ6Vj61qK4nXLe6">here.</a></p>
   </div>
 
   <div class="col-md-12">
