@@ -72,7 +72,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
 <div class="container-fluid">
   <h1 class="text-center">Sponsorship Proposal</h1>
-  <embed src="./ProxResumeNewV2.pdf" type="application/pdf" width="100%" height="600px">
+  <embed src="./Proximity_Racing_Sponsorship_2020.pdf" type="application/pdf" width="100%" height="600px">
 
   </div>
 
