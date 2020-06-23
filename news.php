@@ -79,7 +79,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   
   ?>
 
-  <div class='container-fluid'>
+  <!-- <div class='container-fluid'>
     <div class='row padding'>
       <div class='col-md-6'>
         <img class='newspic img-fluid' src='blogpics/blogpics$id/$mainpic' style='float:left;''>
@@ -95,7 +95,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         </div>
       </div>
     </div>
-  </div>
+  </div> -->
 <?php include 'footer.php'; ?>
 </body>
 </html>

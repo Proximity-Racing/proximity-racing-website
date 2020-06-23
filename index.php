@@ -82,10 +82,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   </div>
   <div class="container-fluid fixed4 fade">
   <div class="row">
-    <div class="text-center col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 gap">
-        <iframe width="660" height="415" src="https://www.youtube.com/embed/MwxcyNvFPcA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <div class="text-center col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 gap">
+        <iframe class="frame-size" src="https://www.youtube.com/embed/MwxcyNvFPcA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
-    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 gap">
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 gap">
       <h1 class="fixedbackgroundheader ml-5 mb-3">Who We Are</h1>
       <p class="lead pp fixedbackgroundtext">Proximity Racing is a sanctioned iRacing.com motorsport team. Founded November 10th, 2016, our team started with five members.  After our 24 Hours of Daytona run coming short in 2017, we reformed our team, expanding our member base.</p>
       <br><br>

@@ -72,7 +72,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- About Container -->
 <div class ="container-fluid padding fade">
 <div class ="row padding">
-  <div class="col-md-12">
+  <div class="col-lg-12 col-md-12 col-sm-12">
     <p class="ps-2 mt-5 lead">Proximity Racing is a sanctioned iRacing.com motorsport team. Founded November 10th, 2016, our team started with five members.  After our 24 Hours of Daytona run coming short in 2017, we reformed our team, expanding our member base. After months worth of preparation for the 2017 6 Hours of The Glen, our two teams managed to score our first team endurance wins. We brought this confidence into the 2018 24 Hours of Daytona and ended up winning our class.</p>
     <br>
     <br>
@@ -128,13 +128,13 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
  <div class="container-fluid padding fade amenities">
  <div class="row padding">
       <div class="col-xs-12 col-md-6">
-       <ul class="amenities">
+       <ul class="amen">
         <li class="lead">Professional Training</li>
         <li class="lead">Access to replays, setups, telemetry files and tools</li>
         </ul>
       </div>
       <div class="col-xs-12 col-md-6">
-       <ul class="amenities">
+       <ul class="amen">
         <li class="lead">Paint scheme library access</li>
         <li class="lead">Representing our top sponsors</li>
         <li class="lead">Merchandise</li>

@@ -12,8 +12,17 @@
 	width: 615px;
 }
 
+.bg-dark {
+	background-color: #242424 !important;
+}
+
+.frame-size {
+	width: 660px; 
+	height: 415px; 
+}
+
 .fixed7 {
-	background-size: 120% !important;
+	background-size: 130% !important;
 	background-image :url(./img/ProximityTruck2.png);
 	height: 900px;
     background-position: -380px 0px !important;
@@ -33,6 +42,7 @@
 .proxanalyticsheader {
 	background-image: url('img/ProxAnalytics.png');
 	background-repeat: no-repeat;
+	background-size:100%;	
 	background-position: 0px;
 	height: 100%;
 	width: 100%;
@@ -694,9 +704,14 @@ html, body {
 
 .amenities{
 	font-size: 18px;
-	margin-left: 10%;
 	list-style: circle;
 }
+
+.amen {
+	margin-right: 12em;
+	margin-left: 12em;
+}
+
 .aboutpic1{
 	height: auto;
 	width: auto;
@@ -1015,7 +1030,15 @@ hr.light-100 {
 
 
 
+@media (max-width: 1600px) {
+	.fixed7 {
+		background-size: 160% !important;
+		background-image :url(./img/ProximityTruck2.png);
+		height: 850px;
+		background-position: -450px -80px !important;
+	}
 
+}
 
 
 
@@ -1031,16 +1054,37 @@ hr.light-100 {
 /*----Medeia Querries----*/
 
 @media (max-width: 1300px) {
+	.proxanalyticsheader {
+		background-image: url('img/ProxAnalytics.png');
+		background-size:100%;
+		background-repeat: no-repeat;
+		background-position: 0px;
+		height: 100%;
+		width: 100%;
+	}
+	.frame-size {
+		width: 545px; 
+		height: 300px; 
+	}
+	.fixed7 {
+		background-size: 190% !important;
+		background-image :url(./img/ProximityTruck2.png);
+		height: 850px;
+		background-position: -450px -80px !important;
+	}
 
 
-		.sign{
+	.sign{
 	z-index: 2;
 	position: absolute;
 	margin-left: 90%;
 	font-size: 12px;
 }
 
-
+.amen {
+	margin-right: 3em;
+	margin-left: 3em;
+}
 .prof{
 	z-index: 2;
 	position: absolute;
@@ -1054,6 +1098,29 @@ hr.light-100 {
 }
 
 @media (max-width: 992px) {
+	.ps-2 {
+		margin-left: 3em;
+		margin-right: 3em;
+	}
+	.frame-size {
+		width: 560px; 
+		height: 315px; 
+	}
+	.fixed7 {
+		background-size: 270% !important;
+		background-image :url(./img/ProximityTruck2.png);
+		height: 750px;
+		background-position: -450px -60px !important;
+	}
+	
+	.proxanalyticsheader {
+		background-image: url('img/ProxAnalytics.png');
+		background-size:100%;
+		background-repeat: no-repeat;
+		background-position: 0px;
+		height: 100%;
+		width: 100%;
+	}
 	.fullpic{
 	height: 450px;
 	width: 450px;
@@ -1104,12 +1171,9 @@ hr.light-100 {
 		margin-left: 8em;
 		margin-right: 8em;
 	}
-	.ps-2 {
-		margin-left: 15em;
-		margin-right: 15em;
-	}
-	.amenities {
-		margin-left: 1em;
+	.amen {
+		margin-right: 3em;
+		margin-left: 3em;
 	}
 	.card {
 		height: 600px;
@@ -1139,6 +1203,16 @@ hr.light-100 {
 	}
 }
 @media (max-width: 768px) {
+
+	.amen {
+		margin-right: 6em;
+		margin-left: 6em;
+	}
+
+	.ps-2 {
+		margin-left: 3em;
+		margin-right: 3em;
+	}
 	.formstyle {
 	margin-left: 50px;
 	margin-right: 50px;
@@ -1174,12 +1248,6 @@ hr.light-100 {
 		.fixed3 {
 	background: linear-gradient( rgba(0,0,0,0.5), rgba(0, 0, 0, 0.5) ),url(./img/parkerpic1.png);
 	height: 1200px;
-
-	  /* Create the parallax scrolling effect */
-	background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 	    #dates {
       width: 50%;
@@ -1310,8 +1378,9 @@ hr.light-100 {
 		max-height: 10rem;
 		margin-left: 10px !important;
 	}
-	.amenities {
-		margin-left: 1em;
+	.amen {
+		margin-right: 0em;
+		margin-left: 0em;
 	}
 	.card {
 		height: 700px;
@@ -1368,26 +1437,10 @@ hr.light-100 {
 	.fixed2 {
 	background:linear-gradient( rgba(0,0,0,0.5), rgba(0, 0, 0, 0.5) ),url(./img/blog4pic2.jpg) no-repeat center fixed;
 	height: 900px;
-
-	  /* Create the parallax scrolling effect */
-	background-attachment: scroll;
-	background-repeat: no-repeat;
-	  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
 }
 		.fixed3 {
 	background: linear-gradient( rgba(0,0,0,0.5), rgba(0, 0, 0, 0.5) ),url(./img/parkerpic1.png);
 	height: 1200px;
-
-	  /* Create the parallax scrolling effect */
-	background-attachment: scroll;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-    -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
 }
 .mobile-ml3 {
 	margin-left: 3em;
@@ -1445,16 +1498,6 @@ hr.light-100 {
 	height: 800px;
     background-position: -750px 0px !important;
     background-color: rgba(0,0,0,0.5) !important;
-	  /* Create the parallax scrolling effect */
-	background-attachment: scroll;
-	background-blend-mode: color;
-  	background-position: center;
- 	 background-repeat: no-repeat;
- 	 	    -ms-background-size: cover;
-    -o-background-size: cover;
-    -moz-background-size: cover;
-    -webkit-background-size: cover;
-    background-size: cover;
 }
 }
 @media (max-width: 576px) {
@@ -1463,14 +1506,6 @@ hr.light-100 {
     background-position: -100px 0px;
     background-color: rgba(0,0,0,0.5) !important;
 	background-image: url(./img/ignite1.png);
-	  /* Create the parallax scrolling effect */
-	background-attachment: scroll;
-	background-blend-mode: color;
-	    -ms-background-size: cover;
-    -o-background-size: cover;
-    -moz-background-size: cover;
-    -webkit-background-size: cover;
-    background-size: cover;
 }
 
 .fixed7 {
@@ -1479,15 +1514,6 @@ hr.light-100 {
 	height: 650px;
     background-position: -380px 0px !important;
     background-color: rgba(0,0,0,0.0) !important;
-	  /* Create the parallax scrolling effect */
-	background-blend-mode: color;
-  	background-position: center;
- 	 background-repeat: no-repeat;
- 	 	    -ms-background-size: cover;
-    -o-background-size: cover;
-    -moz-background-size: cover;
-    -webkit-background-size: cover;
-    background-size: cover;
 }
 
 .padding-top {
@@ -1498,13 +1524,6 @@ hr.light-100 {
 	width: auto;
 	height: auto;
 		background-position: -200px 0px;
-	  /* Create the parallax scrolling effect */
-	background-repeat: no-repeat;
-	    -ms-background-size: cover;
-    -o-background-size: cover;
-    -moz-background-size: cover;
-    -webkit-background-size: cover;
-    background-size: cover;
 
 }
 
@@ -1514,15 +1533,6 @@ hr.light-100 {
 	background-size: cover !important;
 	background-position: -500px 0px;
 	background-color: rgba(0,0,0,0.5) !important;
-	  /* Create the parallax scrolling effect */
-	background-attachment: scroll;
-	background-blend-mode: color;
-	background-repeat: no-repeat;
-	    -ms-background-size: cover;
-    -o-background-size: cover;
-    -moz-background-size: cover;
-    -webkit-background-size: cover;
-    background-size: cover;
 }
 	.gap-mobile {
 	margin-top: 8em;
@@ -1555,7 +1565,6 @@ hr.light-100 {
 
     .amenities{
 	font-size: 18px;
-	margin-left: 0%;
 	list-style: circle;
 }
 .partnerheader {
