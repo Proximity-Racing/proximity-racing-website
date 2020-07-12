@@ -215,7 +215,7 @@ $(window).scroll(function() {
       })
     });
 </script>
-<section class="time-line-color  mobile-hide back fade gapbiggest pad-sm pad-bot">
+<section class="bg-dark mobile-hide back fade gapbiggest pad-sm pad-bot">
   <div class="col-md-12 text-center">
     <h1 style="font-size: 50px; color:white;">Our Timeline</h1>
   </div>
