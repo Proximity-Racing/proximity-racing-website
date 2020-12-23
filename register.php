@@ -42,8 +42,12 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 	
   <form method="POST" action="">
   	<div class="form-group">
-  	  <label>Full Name</label>
-  	  <input type="text" name="full_name" value="">
+  	  <label>First Name</label>
+  	  <input type="text" name="first_name" value="">
+  	</div>
+    <div class="form-group">
+  	  <label>Last Name</label>
+  	  <input type="text" name="last_name" value="">
   	</div>
   	<div class="form-group">
   	  <label>Email</label>
@@ -71,7 +75,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 session_start();
 
 // initializing variables
-$full_name = "";
+$first_name = "";
+$last_name = "";
 $email    = "";
 $errors = array(); 
 $defaultimg = "stig.jpg";
@@ -81,7 +86,8 @@ include '../config/db_conn.php';
 // REGISTER USER
 if (isset($_POST["reg_user"])) {
   // receive all input values from the form
-  $full_name = mysqli_real_escape_string($con, $_POST["full_name"]);
+  $first_name = mysqli_real_escape_string($con, $_POST["first_name"]);
+  $last_name = mysqli_real_escape_string($con, $_POST["last_name"]);
   $email = strtolower(mysqli_real_escape_string($con, $_POST["email"]));
   $password_1 = mysqli_real_escape_string($con, $_POST["password_1"]);
   $password_2 = mysqli_real_escape_string($con, $_POST["password_2"]);
@@ -89,9 +95,12 @@ if (isset($_POST["reg_user"])) {
 
   // form validation: ensure that the form is correctly filled ...
   // by adding (array_push()) corresponding error unto $errors array
-  if (empty($full_name)) { 
-    echo "<script language=\"javascript\">alert(\"Full name is required\");document.location.href='register.php';</script>";
-    array_push($errors, "Full name is required"); }
+  if (empty($first_name)) { 
+    echo "<script language=\"javascript\">alert(\"First name is required\");document.location.href='register.php';</script>";
+    array_push($errors, "First name is required"); }
+  if (empty($last_name)) { 
+      echo "<script language=\"javascript\">alert(\"Last name is required\");document.location.href='register.php';</script>";
+      array_push($errors, "Last name is required"); }
   if (empty($email)) { 
     echo "<script language=\"javascript\">alert(\"Email is required\");document.location.href='register.php';</script>";
     array_push($errors, "Email is required"); }
@@ -120,17 +129,22 @@ if (isset($_POST["reg_user"])) {
   if (count($errors) == 0) {
   	$password = md5($password_1);//encrypt the password before saving in the database
 
-  	$query = "INSERT INTO proximityracing.login (idlogin, email, password, full_name, role) VALUES(NULL, '$email', '$password', '$full_name', '$role')";
+  	$query = "INSERT INTO proximityracing.login (login_id, email, password, first_name, last_name, role) VALUES(NULL, '$email', '$password', '$first_name', '$last_name', '$role')";
 
 
     if (mysqli_query($con, $query)) {
     echo "New record created successfully";
-    $query2 = "INSERT INTO proximityracing.members (id, name, home, num, about, profilepic, bday, school, facebook, twitter, youtube, instagram, snapchat, iracing) VALUES(NULL, '$full_name', NULL, NULL, NULL, '$defaultimg', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL)";
+    $query2 = "INSERT INTO proximityracing.members 
+    (first_name, last_name, hometown, phone_number, about, profile_pic, birthday, school, 
+    facebook, twitter, youtube, instagram, snapchat, twitch, iracing, position, priority) 
+    VALUES('$first_name', 
+    '$last_name', NULL, NULL, NULL, '$defaultimg', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 0)";
     mysqli_query($con, $query2);
-    $query3 = "SELECT * FROM proximityracing.login where email = '$email' AND full_name = '$full_name';";
+    $query3 = "SELECT * FROM proximityracing.login where email = '$email' AND first_name = '$first_name' AND last_name = '$last_name';";
     $data = mysqli_fetch_array(mysqli_query($con, $query3));
-      $_SESSION['id'] = $data['idlogin'];
-      $_SESSION['name'] = $full_name;
+      $_SESSION['id'] = $data['login_id'];
+      $_SESSION['first_name'] = $first_name;
+      $_SESSION['last_name'] = $last_name;
       $_SESSION['success'] = true;
       $_SESSION['email'] = $email;
       $_SESSION['role'] = $role;

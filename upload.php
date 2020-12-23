@@ -21,8 +21,8 @@ if(isset($_POST['submit2'])) {
 				$fileDestination = './profile_pictures/'.$fileNameNew;
 				move_uploaded_file($fileTmpName, $fileDestination);
 				$user_check_query = "UPDATE proximityracing.members 
-		        SET profilepic = '$fileNameNew'
-		        WHERE id='$id';";
+		        SET profile_pic = '$fileNameNew'
+		        WHERE member_id='$id';";
 		        mysqli_query($con, $user_check_query);
 				header("Location: profile.php?uploadsuccess");
 			} else {

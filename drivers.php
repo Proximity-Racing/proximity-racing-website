@@ -58,31 +58,32 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <div class="row text-center">
         <?php 
         include_once '../config/db_conn.php';
-        $query = "SELECT * FROM members ORDER BY priority+0 DESC LIMIT 1;";
-        $query2 = "SELECT * FROM members ORDER BY priority+0 LIMIT 1;";
+        $query = "SELECT * FROM members ORDER BY priority+0 LIMIT 1;";
+        $query2 = "SELECT * FROM members ORDER BY priority+0 DESC LIMIT 1;";
         $first = mysqli_fetch_array(mysqli_query($con, $query));
         $last = mysqli_fetch_array(mysqli_query($con, $query2));
         $i = $first['priority'];
-        while($i >= $last['priority']): 
+        while($i <= $last['priority']): 
           $query3 = "SELECT * FROM proximityracing.members where priority = '$i';";
           $data = mysqli_fetch_array(mysqli_query($con, $query3));
-          $_SESSION['userid'] = $data['id'];
-          $_SESSION['username'] = $data['name'];
-          $_SESSION['profilepic'] = $data['profilepic'];
+          $_SESSION['userid'] = $data['member_id'];
+          $_SESSION['firstname'] = $data['first_name'];
+          $_SESSION['lastname'] = $data['last_name'];
+          $_SESSION['profilepic'] = $data['profile_pic'];
           $_SESSION['position'] = $data['position'];
           $_SESSION['priority'] = $data['priority'];
-          $str = "userid={$_SESSION['userid']}&name={$_SESSION['username']}";
+          $str = "userid={$_SESSION['userid']}&fname={$_SESSION['firstname']}&lname={$_SESSION['lastname']}";
           ?>
           <?php if($_SESSION['priority'] > 0): ?>
           <div class="col-md-4">
             <a class="aye" href="user.php?<?php echo $str; ?>"><img class="aye img-fluid rounded-circle" src=<?php echo "profile_pictures/".$_SESSION['profilepic'] ?> alt="driver"> </a>
             <div class="card-body">
-              <h4 class="card-title"><?php echo $_SESSION['username'] ?></h4>
+              <h4 class="card-title"><?php echo $_SESSION['firstname'] ?> <?php echo $_SESSION['lastname'] ?></h4>
               <h6 class="card-title"><?php echo $_SESSION['position'] ?></h6>
             </div>
           </div>
         <?php endif; ?>
-        <?php $i--;
+        <?php $i++;
         endwhile; ?>
 
       </div>

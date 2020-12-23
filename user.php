@@ -14,7 +14,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" href="img/favicon.png" type="image/png">
-    <title><?php echo $_GET['name']; ?> | Proximity Racing</title>
+    <title><?php echo $_GET['fname']; ?> <?php echo $_GET['lname']; ?>| Proximity Racing</title>
     <meta name="description" content="Proximity Racing is a sanctioned iRacing.com motorsport team">
     <meta name="robots" content="index, follow" />
     <meta name="keywords" content="proximity racing, proximity, proximityracing, iracing, chris nosowsky">
@@ -58,14 +58,15 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <?php
       require_once('../config/db_conn.php');
       $id=$_GET['userid'];
-      $result3 = mysqli_query($con, "SELECT * FROM members where id='$id'");
+      $result3 = mysqli_query($con, "SELECT * FROM members where member_id='$id'");
       $row3 = mysqli_fetch_array($result3);
-      $fname=$row3['name'];
-      $address=$row3['home'];
-      $contact=$row3['num'];
+      $fname=$row3['first_name'];
+      $lname=$row3['last_name'];
+      $address=$row3['hometown'];
+      $contact=$row3['phone_number'];
       $about = $row3['about'];
-      $picture=$row3['profilepic'];
-      $bday=$row3['bday'];
+      $picture=$row3['profile_pic'];
+      $bday=$row3['birthday'];
       $school=$row3['school'];
       $iracing=$row3['iracing'];
       $facebook=$row3['facebook'];
@@ -82,7 +83,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <img class = "img-fluid fullpic" src= <?php echo "profile_pictures/".$picture ?>>
         </div>
         <div class="col-xs-12 col-sm-12 col-md-6 mobile-ml3">
-        <h2 class="mt-5"><?php echo $fname; ?></h4>
+        <h2 class="mt-5"><?php echo $fname; ?> <?php echo $lname; ?></h4>
         <h5><?php echo $position; ?></h5>
         <br>
         <p class="lead mt-4">Address: <?php echo $address; ?></p>

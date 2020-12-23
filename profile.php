@@ -56,21 +56,22 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
     <?php
     include '../config/db_conn.php';
-    $userData = $_SESSION['name'];
+    $userData = $_SESSION['first_name'];
     ?>
     <?php
       require_once('../config/db_conn.php');
       $id=$_SESSION['id'];
-      $result3 = mysqli_query($con, "SELECT * FROM members where id='$id'");
+      $result3 = mysqli_query($con, "SELECT * FROM members where member_id='$id'");
       $row3 = mysqli_fetch_array($result3);
-      $result4 = mysqli_query($con, "SELECT * FROM login where idlogin='$id'");
+      $result4 = mysqli_query($con, "SELECT * FROM login where login_id='$id'");
       $row4 = mysqli_fetch_array($result4);
-      $fname=$row3['name'];
-      $address=$row3['home'];
-      $contact=$row3['num'];
+      $fname=$row3['first_name'];
+      $lname=$row3['last_name'];
+      $address=$row3['hometown'];
+      $contact=$row3['phone_number'];
       $about = $row3['about'];
-      $picture=$row3['profilepic'];
-      $bday=$row3['bday'];
+      $picture=$row3['profile_pic'];
+      $bday=$row3['birthday'];
       $school=$row3['school'];
       $iracing=$row3['iracing'];
       $facebook=$row3['facebook'];
@@ -194,14 +195,14 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         $email = $_POST['email'];
         include 'db_conn.php';
         $user_check_query = "UPDATE proximityracing.members 
-        SET home = '$address', num='$contact', about='$about', bday='$bday', school='$school', iracing='$iracing', snapchat='$snapchat', twitter='$twitter',
+        SET hometown = '$address', phone_number='$contact', about='$about', birthday='$bday', school='$school', iracing='$iracing', snapchat='$snapchat', twitter='$twitter',
         instagram='$instagram', facebook='$facebook', youtube='$youtube', twitch = '$twitch'
-        WHERE id='$id';";
+        WHERE member_id='$id';";
         mysqli_query($con, $user_check_query);
 
         $user_check_query2 = "UPDATE proximityracing.login
         SET email = '$email'
-        WHERE idlogin='$id';";
+        WHERE login_id='$id';";
         mysqli_query($con, $user_check_query);
         echo "<script language=\"javascript\">alert(\"Saved Information.\");document.location.href='editprofile.php';</script>";
       }

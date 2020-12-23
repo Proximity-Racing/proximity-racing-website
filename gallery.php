@@ -51,7 +51,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <?php 
       include_once 'navbar.php';
     ?>
-    <div class='embedsocial-instagram' data-ref="0987152a255a53208148e54f749db459d9ef5373"></div><script>(function(d, s, id){var js; if (d.getElementById(id)) {return;} js = d.createElement(s); js.id = id; js.src = "https://embedsocial.com/embedscript/in.js"; d.getElementsByTagName("head")[0].appendChild(js);}(document, "script", "EmbedSocialInstagramScript"));</script>
+    
+<div class='embedsocial-instagram' data-ref="7a10a69e252c40bf90b6133aad140ed77432069f"></div><script>(function(d, s, id){var js; if (d.getElementById(id)) {return;} js = d.createElement(s); js.id = id; js.src = "https://embedsocial.com/embedscript/in.js"; d.getElementsByTagName("head")[0].appendChild(js);}(document, "script", "EmbedSocialInstagramScript"));</script>
+
     <?php include 'footer.php'; ?>
 
 

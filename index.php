@@ -165,9 +165,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <div class="card">
       <?php
       include_once '../config/db_conn.php';
-      $result3 = mysqli_query($con, "SELECT * FROM members where name='Chris Nosowsky'");
+      $result3 = mysqli_query($con, "SELECT * FROM members where first_name='Chris' AND last_name='Nosowsky'");
       $row3 = mysqli_fetch_array($result3);
-      $image = $row3['profilepic']
+      $image = $row3['profile_pic']
       ?>
       <img class="card-img-top" src=<?php echo "profile_pictures/".$image ?>>
       <div class="card-body d-flex flex-column">
@@ -175,7 +175,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <h6 class="card-title">Founder; Vice President</h6>
         <p class="card-text">Chris is the Founder of Proximity Racing and currently serves as the website designer and vice president.</p>
         <div class="mt-auto">
-        <a href="https://proximityracing.com/user.php?userid=6&name=Chris%20Nosowsky" class="btn btn-outline-secondary">Profile</a>
+        <a href="https://proximityracing.com/user.php?userid=4&fname=Chris&lname=Nosowsky" class="btn btn-outline-secondary">Profile</a>
         </div>
       </div>
     </div>

@@ -105,8 +105,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     {
      session_start();
      $_SESSION['email'] = $data['email'];
-     $_SESSION['name'] = $data['full_name'];
-     $_SESSION['id'] = $data['idlogin'];
+     $_SESSION['first_name'] = $data['first_name'];
+     $_SESSION['last_name'] = $data['last_name'];
+     $_SESSION['id'] = $data['login_id'];
      $_SESSION['role'] = $data['role'];
      $_SESSION['success'] = true;
      if(isset($_SESSION['success'])) {

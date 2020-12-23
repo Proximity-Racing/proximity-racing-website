@@ -55,14 +55,15 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <?php
       require_once('../config/db_conn.php');
       $id=$_SESSION['id'];
-      $result3 = mysqli_query($con, "SELECT * FROM members where id='$id'");
+      $result3 = mysqli_query($con, "SELECT * FROM proximityracing.members where member_id='$id'");
       $row3 = mysqli_fetch_array($result3);
-      $fname=$row3['name'];
-      $address=$row3['home'];
-      $contact=$row3['num'];
+      $fname=$row3['first_name'];
+      $lname=$row3['last_name'];
+      $address= $row3['hometown'];
+      $contact=$row3['phone_number'];
       $about = $row3['about'];
-      $picture=$row3['profilepic'];
-      $bday=$row3['bday'];
+      $picture=$row3['profile_pic'];
+      $bday=$row3['birthday'];
       $school=$row3['school'];
       $iracing=$row3['iracing'];
       $facebook=$row3['facebook'];
@@ -90,21 +91,21 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         });
     </script>
     </form>
-        <div class="container-fluid padding fade fadeinall">
-      <div class="row">
+      <div class="container-fluid padding fade fadeinall">
+        <div class="row">
         <div class="col-xs-12 col-md-6 text-center">
           <img class = "img-fluid fullpic" src= <?php echo "profile_pictures/".$picture ?>>
         </div>
-        <div class="col-xs-12 col-sm-12 col-md-6">
-                  <h2 class="mt-5"><?php echo $fname; ?></h4>
-        <h5><?php echo $position; ?></h5>
-                <br>
-        <p class="lead mt-4">Address: <?php echo $address; ?></p>
-        <p class = "lead">Phone Number: <?php echo $contact; ?></p>
-        <p class = "lead">Birthday: <?php echo $bday; ?></p>
-        <p class = "lead">School: <?php echo $school; ?></p>
+          <div class="col-xs-12 col-sm-12 col-md-6">
+            <h2 class="mt-5"><?php echo $fname; ?> <?php echo $lname; ?></h2>
+            <h5><?php echo $position; ?></h5>
+            <br>
+            <p class="lead mt-4">Address: <?php echo $address; ?></p>
+            <p class = "lead">Phone Number: <?php echo $contact; ?></p>
+            <p class = "lead">Birthday: <?php echo $bday; ?></p>
+            <p class = "lead">School: <?php echo $school; ?></p>
+          </div>
         </div>
-      </div>
     </div>
     <hr class="purpleRuler fade">
     <div class="container-fluid padding fade">
