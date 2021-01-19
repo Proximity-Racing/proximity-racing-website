@@ -77,7 +77,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   			</p>
   			<p class="checkbox"><input type="checkbox">Remember me</p>
   			<button type="submit" name="login" class="btn btn-primary btn-block">Sign in</button>
-        <a class="fo" href="register.php">Register</a>
+        <p><a class="fo" href="register.php">Register</a></p>
+        <p><a class="fo" href="sendpasswordreset.php">Reset Password</a></p>
   		</form>
   	</div>
 
