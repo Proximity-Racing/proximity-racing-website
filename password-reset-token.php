@@ -39,7 +39,7 @@ if(isset($_POST['password-reset-token']) && $_POST['email'])
     $mail->CharSet =  "utf-8";
     $mail->IsSMTP();
     // enable SMTP authentication
-    $mail->SMTPAuth = true;                  
+    $mail->SMTPAuth = true;               
     // GMAIL username
     $mail->Username = $gEmail;
     // GMAIL password

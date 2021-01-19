@@ -577,8 +577,16 @@ html, body {
 
 .partnerspic {
 	transition: transform .3s ease;
-	max-width: 50%;
-	max-height: 60%;
+	max-width:550px;
+	max-height:255px;
+	width: auto;
+	height: auto;
+	object-fit: cover;
+}
+
+.partnerspicgraham {
+	max-width:250px !important;
+	max-height:255px !important;
 }
 
 .card-horizontal {
@@ -596,10 +604,6 @@ html, body {
 
 .card {
 	height: 700px;
-}
-
-.splashGo {
-	margin-top: 10%;
 }
 
 .smallerPic {
@@ -1472,8 +1476,9 @@ hr.light-100 {
 }
 .partnerspic {
 	transition: transform .3s ease;
-	max-width: 80%;
-	max-height: 90%;
+	width: 150px;
+	height: 150px;
+	object-fit: cover;
 }
 
 	.pp {

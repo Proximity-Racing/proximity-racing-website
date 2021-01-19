@@ -95,6 +95,33 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 </div>
 
 <!-- Welcome -->
+<div class="container-fluid padding fade bg-dark">
+<div class="row welcome text-center">
+  <div class="col-12">
+    <h1 class="display-4 text-white">Livestream</h1>
+  </div>
+  <hr>
+</div>
+</div>
+<div class="container-fluid padding fade bg-dark">
+<div class="row text-center padding justify-content-center gap-bot">
+<div id="twitch-embed"></div>
+
+<!-- Load the Twitch embed script -->
+<script src="https://embed.twitch.tv/embed/v1.js"></script>
+
+<!-- Create a Twitch.Embed object that will render within the "twitch-embed" root element. -->
+<script type="text/javascript">
+  new Twitch.Embed("twitch-embed", {
+    width: 1080,
+    height: 500,
+    channel: "proximityracing",
+  });
+</script>
+</div>
+</div>
+
+<!-- Welcome -->
 <div class="container-fluid padding fade">
 <div class="row welcome text-center">
   <div class="col-12">
@@ -142,6 +169,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <br><br><br><br>
     <a href="https://www.facebook.com/RexfordEngineering" target="_blank"><img src="img/RE_White.png" class="img-fluid picoverlay hidesmall"></a>
     <a href="https://soundcloud.com/graham-cracker-yuh" target="_blank"><img src="img/GramCrackerFinal.png" class="img-fluid picoverlay hidesmall mt-5"></a>
+    <a href="https://www.instagram.com/coryhartsmedia/" target="_blank"><img src="img/CHM_INVERTED_No_shadow.png" class="img-fluid picoverlay hidesmall mt-5"></a>
   </div>
 </div>
 </div>
