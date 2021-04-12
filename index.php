@@ -211,11 +211,17 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
   <div class="col-md-3">
     <div class="card">
-      <img class="card-img-top" src="img/chase.png">
+    <?php
+      include_once '../config/db_conn.php';
+      $result3 = mysqli_query($con, "SELECT * FROM members where first_name='Cory' AND last_name='Harts'");
+      $row3 = mysqli_fetch_array($result3);
+      $imageCory = $row3['profile_pic']
+      ?>
+      <img class="card-img-top" src=<?php echo "profile_pictures/".$imageCory ?>>
       <div class="card-body d-flex flex-column">
-        <h4 class="card-title">Chase Bonser</h4>
+        <h4 class="card-title">Cory Harts</h4>
         <h6 class="card-title">President</h6>
-        <p class="card-text">Chase is the current President of Proximity Racing and currently serves as an active driver.</p>
+        <p class="card-text">Cory is the current President of Proximity Racing and currently serves as an active driver.</p>
         <div class="mt-auto">
         <a href="#" class="btn btn-outline-secondary">Profile</a>
         </div>
