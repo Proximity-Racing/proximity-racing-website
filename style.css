@@ -25,7 +25,7 @@
 	background-size: 130% !important;
 	background-image :url(./img/ProximityTruck2.png);
 	height: 900px;
-    background-position: -380px 0px !important;
+    background-position: -380px -100px !important;
     background-color: rgba(0,0,0,0.0) !important;
 	  /* Create the parallax scrolling effect */
 	  background-attachment: fixed;
@@ -1033,9 +1033,8 @@ hr.light-100 {
 @media (max-width: 1600px) {
 	.fixed7 {
 		background-size: 160% !important;
-		background-image :url(./img/ProximityTruck2.png);
 		height: 850px;
-		background-position: -450px -80px !important;
+		background-position: -550px -80px !important;
 	}
 
 }
@@ -1055,7 +1054,6 @@ hr.light-100 {
 
 @media (max-width: 1300px) {
 	.proxanalyticsheader {
-		background-image: url('img/ProxAnalytics.png');
 		background-size:100%;
 		background-repeat: no-repeat;
 		background-position: 0px;
@@ -1067,10 +1065,9 @@ hr.light-100 {
 		height: 300px; 
 	}
 	.fixed7 {
-		background-size: 190% !important;
-		background-image :url(./img/ProximityTruck2.png);
+		background-size: 175% !important;
 		height: 850px;
-		background-position: -450px -80px !important;
+		background-position: -550px -80px !important;
 	}
 
 
@@ -1108,13 +1105,11 @@ hr.light-100 {
 	}
 	.fixed7 {
 		background-size: 270% !important;
-		background-image :url(./img/ProximityTruck2.png);
 		height: 750px;
 		background-position: -450px -60px !important;
 	}
 	
 	.proxanalyticsheader {
-		background-image: url('img/ProxAnalytics.png');
 		background-size:100%;
 		background-repeat: no-repeat;
 		background-position: 0px;
@@ -1325,15 +1320,11 @@ hr.light-100 {
 		margin-right: 1.5em;
 	}
 	.aboutheader {
-		background-image: url('img/Team1Pic3.png');
-		background-repeat: no-repeat;
 		background-position: -700px -150px;
 		height: 300px;
 	}
 
 	.test {
-		background-image: url('img/sunset.png');
-		background-repeat: no-repeat;
 		background-position: -900px -550px;
 		height: 300px;
 	}
@@ -1495,7 +1486,6 @@ hr.light-100 {
 	font-size: 35px;
 }
 .fixed4 {
-	background-image :url(./img/bathurst.png);
 	height: 800px;
     background-position: -750px 0px !important;
     background-color: rgba(0,0,0,0.5) !important;
@@ -1506,14 +1496,12 @@ hr.light-100 {
 	height: 900px;
     background-position: -100px 0px;
     background-color: rgba(0,0,0,0.5) !important;
-	background-image: url(./img/ignite1.png);
 }
 
 .fixed7 {
 	background-size: 310% !important;
-	background-image :url(./img/ProximityTruck2.png);
 	height: 650px;
-    background-position: -380px 0px !important;
+    background-position: -480px 0px !important;
     background-color: rgba(0,0,0,0.0) !important;
 }
 
@@ -1521,7 +1509,6 @@ hr.light-100 {
 	margin-top:0%;
 }
 .headerimg {
-	background-image: url('img/parkerwinheader.png');
 	width: auto;
 	height: auto;
 		background-position: -200px 0px;
@@ -1529,7 +1516,6 @@ hr.light-100 {
 }
 
 .fixed6 {
-	background-image: url(./img/rtphunter.jpg );
 	height: 900px;
 	background-size: cover !important;
 	background-position: -500px 0px;
@@ -1569,7 +1555,6 @@ hr.light-100 {
 	list-style: circle;
 }
 .partnerheader {
-	background-image: url('img/rtphunter2.jpg');
 	background-repeat: no-repeat;
 	background-size: 200%;
 	background-position: -100px 0px;
@@ -1582,7 +1567,6 @@ hr.light-100 {
         height: 50px;
         font-size: 20px;
         text-align: center;
-        background: url('images/biggerdot.png') center bottom no-repeat;
       }
         #dates a {
           line-height: 38px;
@@ -1614,11 +1598,9 @@ hr.light-100 {
       }
       #next {
         right: 0;
-        background-image: url('images/next.png');
       }
       #prev {
         left: 0;
-        background-image: url('images/prev.png');
       }
         #next.disabled,
         #prev.disabled {
@@ -1651,7 +1633,6 @@ hr.light-100 {
 		margin-right: 0em;
 	}
 	.aboutheader {
-		background-image: url('img/Team1Pic3.png');
 		background-repeat: no-repeat;
 		background-position: -800px -150px;
 		height: 300px;
@@ -1754,7 +1735,6 @@ figure {
   height: 100%;
 }
 #fixed {
-  background-image: url('img/image0.png');
   position: fixed;
   display: block;
   width: 100%;
@@ -1770,21 +1750,14 @@ figure {
     padding: 1rem;
 }
 
-
-
 #slides {
 	z-index: 0 !important;
 }
-
-
 
 .sociales {
   text-align: center;
   margin-bottom: 20px;
 }
-
-
-
 
 
 /*
