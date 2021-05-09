@@ -4,7 +4,7 @@
     $res = mysqli_query($con, $sql);
     $posts = "";
 
-    if(mysqli_num_rows($res) > 0) {
+    if($res && mysqli_num_rows($res) > 0) {
       while($row = mysqli_fetch_assoc($res)) {
         $id = $row['id'];
         $title = $row['title'];

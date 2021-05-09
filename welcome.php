@@ -1,31 +1,11 @@
-
+<?php
+require 'lib/site.inc.php';
+$view = new ProximityRacing\GeneralView();
+?>
 <!DOCTYPE html>
 <html>
 <head>
-  <!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-TBKGS5L');</script>
-<!-- End Google Tag Manager -->
-  <link rel="icon" href="img/favicon.png" type="image/png">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Proximity Racing is a sanctioned iRacing.com motorsport team">
-  <meta name="robots" content="index, follow" />
-  <meta name="keywords" content="proximity racing, proximity, proximityracing, iracing, chris nosowsky">
-  <link rel="canonical" href="https://proximityracing.com/welcome.php" />
-  <title>Welcome | Proximity Racing</title>
-  <link rel="stylesheet" type="text/css" href="style.css">
-          <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-155164803-1"></script>
-        <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-
-      gtag('config', 'UA-155164803-1');
-    </script>
+<?php echo $view->presentHeader("Welcome | Proximity Racing"); ?>
 </head>
 <body>
   <!-- Google Tag Manager (noscript) -->

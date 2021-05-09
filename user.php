@@ -1,5 +1,6 @@
 <?php
-session_start();
+require 'lib/site.inc.php';
+$view = new ProximityRacing\GeneralView();
 ?>
 <!DOCTYPE html>
 <html lang ="en">
@@ -127,6 +128,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </div>
   </div>
-  <?php include 'footer.php'; ?>
+  <?php echo $view->footer(); ?>
   </body>
 </html>
