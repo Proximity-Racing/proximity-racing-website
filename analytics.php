@@ -6,19 +6,19 @@ $view = new ProximityRacing\GeneralView();
 <html lang="en">
 
 <head>
-  <?php echo $view->presentHeader("Analytics | Proximity Racing"); ?>
+    <?php echo $view->presentHeader("Analytics | Proximity Racing"); ?>
 </head>
 
 <body style="background-color: #050505;">
-  <?php echo $view->presentNavbar(); ?>
+    <?php echo $view->presentNavbar(); ?>
 
-  <div class="proxanalyticsheader captionfadein">
-  </div>
+    <div class="proxanalyticsheader captionfadein">
+    </div>
 
-  <h2 class="text-center">Coming Soon.</h2>
-  <br>
-  <br>
-  <?php echo $view->footer(); ?>
+    <h2 class="text-center">Coming Soon.</h2>
+    <br>
+    <br>
+    <?php echo $view->footer(); ?>
 </body>
 
 </html>

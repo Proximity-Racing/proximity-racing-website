@@ -5,49 +5,52 @@ $view = new ProximityRacing\GeneralView();
 
 <!DOCTYPE html>
 <html>
+
 <head>
-<?php echo $view->presentHeader("Register | Proximity Racing"); ?>
+    <?php echo $view->presentHeader("Register | Proximity Racing"); ?>
 </head>
+
 <body>
-  <!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TBKGS5L"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->
-  <div class="container-fluid">
-  	<div class="col-md-12">
-  	<h2>Register</h2>
-  	</div>
-  </div>
-	
-  <form method="POST" action="">
-  	<div class="form-group">
-  	  <label>First Name</label>
-  	  <input type="text" name="first_name" value="">
-  	</div>
-    <div class="form-group">
-  	  <label>Last Name</label>
-  	  <input type="text" name="last_name" value="">
-  	</div>
-  	<div class="form-group">
-  	  <label>Email</label>
-  	  <input type="email" name="email" value="">
-  	</div>
-  	<div class="form-group">
-  	  <label>Password</label>
-  	  <input type="password" name="password_1">
-  	</div>
-  	<div class="form-group">
-  	  <label>Confirm password</label>
-  	  <input type="password" name="password_2">
-  	</div>
-  	<div class="form-group">
-  	  <button type="submit" class="btn btn-primary" name="reg_user">Register</button>
-  	</div>
-  	<p>
-  		Already a member? <a href="login.php">Sign in</a>
-  	</p>
-  </form>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TBKGS5L" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <div class="container-fluid">
+        <div class="col-md-12">
+            <h2>Register</h2>
+        </div>
+    </div>
+
+    <form method="POST" action="">
+        <div class="form-group">
+            <label>First Name</label>
+            <input type="text" name="first_name" value="">
+        </div>
+        <div class="form-group">
+            <label>Last Name</label>
+            <input type="text" name="last_name" value="">
+        </div>
+        <div class="form-group">
+            <label>Email</label>
+            <input type="email" name="email" value="">
+        </div>
+        <div class="form-group">
+            <label>Password</label>
+            <input type="password" name="password_1">
+        </div>
+        <div class="form-group">
+            <label>Confirm password</label>
+            <input type="password" name="password_2">
+        </div>
+        <div class="form-group">
+            <button type="submit" class="btn btn-primary" name="reg_user">Register</button>
+        </div>
+        <p>
+            Already a member? <a href="login.php">Sign in</a>
+        </p>
+    </form>
 </body>
+
 </html>
 
 <?php

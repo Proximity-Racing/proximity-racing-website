@@ -2,41 +2,45 @@
 require 'lib/site.inc.php';
 $view = new ProximityRacing\GeneralView();
 ?>
-  <!DOCTYPE html>
-<html lang ="en">
-  <head>
-  <?php echo $view->presentHeader("Login | Proximity Racing"); ?>
-  </head>
-  <body>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <?php echo $view->presentHeader("Login | Proximity Racing"); ?>
+</head>
+
+<body>
     <!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TBKGS5L"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->
-  	<div class="container">
-  		<form class="form-signin" action="" method="POST">
-        <button onclick="window.location.href = './';" type="button" class="btn btn-dark btn-sm">Back to Home</button>
-        <br>
-  			<h1 class="text-center">Sign in</h1>
-        <br>
-          <br>
-  			<p>
-  				<label class="sr-only">Email address</label>
-  				<input name = "email" type="email" placeholder="Email address" class="form-control" required autofocus>
-  			</p>
-  			<p>
-  				<label class="sr-only">Password</label>
-  				<input name = "password" type="password" placeholder="Password" class="form-control" required>
-  			</p>
-  			<p class="checkbox"><input type="checkbox">Remember me</p>
-  			<button type="submit" name="login" class="btn btn-primary btn-block">Sign in</button>
-        <p><a class="fo" href="register.php">Register</a></p>
-        <p><a class="fo" href="sendpasswordreset.php">Reset Password</a></p>
-  		</form>
-  	</div>
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TBKGS5L" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <div class="container">
+        <form class="form-signin" action="" method="POST">
+            <button onclick="window.location.href = './';" type="button" class="btn btn-dark btn-sm">Back to
+                Home</button>
+            <br>
+            <h1 class="text-center">Sign in</h1>
+            <br>
+            <br>
+            <p>
+                <label class="sr-only">Email address</label>
+                <input name="email" type="email" placeholder="Email address" class="form-control" required autofocus>
+            </p>
+            <p>
+                <label class="sr-only">Password</label>
+                <input name="password" type="password" placeholder="Password" class="form-control" required>
+            </p>
+            <p class="checkbox"><input type="checkbox">Remember me</p>
+            <button type="submit" name="login" class="btn btn-primary btn-block">Sign in</button>
+            <p><a class="fo" href="register.php">Register</a></p>
+            <p><a class="fo" href="sendpasswordreset.php">Reset Password</a></p>
+        </form>
+    </div>
 
 
 
- </body>
+</body>
+
 </html>
 
 <?php
@@ -75,13 +79,3 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   }
   mysqli_close($con);
   ?>
-
-
-
-
-
-
-
-
-
-

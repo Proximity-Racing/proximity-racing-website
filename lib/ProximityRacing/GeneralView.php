@@ -4,7 +4,6 @@ namespace ProximityRacing;
 
 class GeneralView {
 
-
     private $title = "";
     private $links = [];
 
@@ -16,7 +15,6 @@ class GeneralView {
         $this->addLink("partners.php", "Partners");
         $this->addLink("analytics.php", "Analytics");
     }
-
 
     public function presentHeader($title) {
         $html = <<<HTML
@@ -82,7 +80,7 @@ HTML;
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
   <div class="pagewide sticky-top"> 
-HTML;    
+HTML;
 
       if(isset($_SESSION['success'])) {
         $html .= '<a class ="fo sign" href="logout.php?destroy">Logout</a>';
@@ -127,7 +125,7 @@ HTML;
                 $html .= <<<HTML
                 <a class="nav-link" href="$href">$text</a>
               </li>
-  HTML;
+HTML;
             }
 
         if($activePage == "contact.php" || $activePage == "apply.php" || $activePage == "sponsor.php") {
@@ -150,7 +148,6 @@ HTML;
       </div>
     </nav>
 HTML;
-
         return $html;
     }
 

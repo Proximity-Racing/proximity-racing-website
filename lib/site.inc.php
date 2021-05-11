@@ -1,4 +1,4 @@
 <?php
-require __DIR__ . "/../vendor/autoload.php";
+require 'lib/ProximityRacing/GeneralView.php';
 session_start();
 
