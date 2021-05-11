@@ -2,22 +2,23 @@
 
 namespace ProximityRacing;
 
-class GeneralView {
+class GeneralView
+{
+  private $links = [];
 
-    private $title = "";
-    private $links = [];
+  public function __construct()
+  {
+    $this->addLink("about.php", "About");
+    $this->addLink("news.php", "News");
+    $this->addLink("drivers.php", "Members");
+    $this->addLink("gallery.php", "Gallery");
+    $this->addLink("partners.php", "Partners");
+    $this->addLink("analytics.php", "Analytics");
+  }
 
-    public function __construct() {
-        $this->addLink("about.php", "About");
-        $this->addLink("news.php", "News");
-        $this->addLink("drivers.php", "Members");
-        $this->addLink("gallery.php", "Gallery");
-        $this->addLink("partners.php", "Partners");
-        $this->addLink("analytics.php", "Analytics");
-    }
-
-    public function presentHeader($title) {
-        $html = <<<HTML
+  public function presentHeader($title)
+  {
+    $html = <<<HTML
             <!-- Google Tag Manager -->
 <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
 new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -68,13 +69,14 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       gtag('config', 'UA-155164803-1');
     </script>
 HTML;
-        return $html;
-    }
+    return $html;
+  }
 
 
-    public function presentNavbar() {
-        $activePage = basename($_SERVER['PHP_SELF']); 
-        $html = <<<HTML
+  public function presentNavbar()
+  {
+    $activePage = basename($_SERVER['PHP_SELF']);
+    $html = <<<HTML
             <!-- Google Tag Manager (noscript) -->
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TBKGS5L"
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
@@ -82,15 +84,15 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <div class="pagewide sticky-top"> 
 HTML;
 
-      if(isset($_SESSION['success'])) {
-        $html .= '<a class ="fo sign" href="logout.php?destroy">Logout</a>';
-        $html .= '<a class ="fo prof" href="editprofile.php">My Profile</a>';
-      } else {
-        $html .= '<a class="fo sign" href="login.php">Login</a>';
-        $html .= '<a class="fo prof" href="register.php">Sign Up</a>';
-      }
+    if (isset($_SESSION['success'])) {
+      $html .= '<a class ="fo sign" href="logout.php?destroy">Logout</a>';
+      $html .= '<a class ="fo prof" href="editprofile.php">My Profile</a>';
+    } else {
+      $html .= '<a class="fo sign" href="login.php">Login</a>';
+      $html .= '<a class="fo prof" href="register.php">Sign Up</a>';
+    }
 
-      $html .= <<<HTML
+    $html .= <<<HTML
   </div>
     <!-- Navigation -->
     <nav class="navbar navbar-expand-md navbar-dark bg-dark sticky-top">
@@ -105,36 +107,36 @@ HTML;
           <ul class="navbar-nav ml-auto">
 HTML;
 
-            if($activePage == "index.php") {
-              $html .= '<li class="nav-item active">';
-            } else {
-              $html .= '<li class="nav-item">';
-            }
-            $html .= <<<HTML
+    if ($activePage == "index.php") {
+      $html .= '<li class="nav-item active">';
+    } else {
+      $html .= '<li class="nav-item">';
+    }
+    $html .= <<<HTML
               <a class="nav-link" href="./">Home</a>
             </li>
 HTML;
-            foreach($this->links as $link) {
-                if($activePage == $link["href"]) {
-                    $html .= '<li class="nav-item active">';
-                } else {
-                    $html .= '<li class="nav-item">';
-                }
-                $href = $link['href'];
-                $text = $link['text'];
-                $html .= <<<HTML
+    foreach ($this->links as $link) {
+      if ($activePage == $link["href"]) {
+        $html .= '<li class="nav-item active">';
+      } else {
+        $html .= '<li class="nav-item">';
+      }
+      $href = $link['href'];
+      $text = $link['text'];
+      $html .= <<<HTML
                 <a class="nav-link" href="$href">$text</a>
               </li>
 HTML;
-            }
+    }
 
-        if($activePage == "contact.php" || $activePage == "apply.php" || $activePage == "sponsor.php") {
-            $html .= '<li class="dropdown nav-item active">';
-        } else {
-            $html .= '<li class="dropdown nav-item">';
-        }
+    if ($activePage == "contact.php" || $activePage == "apply.php" || $activePage == "sponsor.php") {
+      $html .= '<li class="dropdown nav-item active">';
+    } else {
+      $html .= '<li class="dropdown nav-item">';
+    }
 
-        $html .= <<<HTML
+    $html .= <<<HTML
             <a href="./contact.php" data-toggle="dropdown" class="dropdown-toggle nav-link">Contact</a>
             <ul class="dropdown-menu" id="menu1">
               <li><a class = "fo" href="./contact.php">Contact Us</a></li>
@@ -148,61 +150,54 @@ HTML;
       </div>
     </nav>
 HTML;
-        return $html;
-    }
+    return $html;
+  }
+
+  /**
+   * Add a link that will appear on the nav bar
+   * @param $href string What to link to
+   * @param $text
+   */
+  public function addLink($href, $text)
+  {
+    $this->links[] = ["href" => $href, "text" => $text];
+  }
 
 
-    /**
-     * Set the page title
-     * @param string $title New page title
-     */
-    public function setTitle(string $title) {
-        $this->title = $title;
-    }
-
-
-    /**
-     * Add a link that will appear on the nav bar
-     * @param $href string What to link to
-     * @param $text
-     */
-    public function addLink($href, $text) {
-        $this->links[] = ["href" => $href, "text" => $text];
-    }
-
-
-    function footer() {
-        return <<<HTML
+  function footer()
+  {
+    return <<<HTML
     <!-- Footer -->
   <footer class="bg-dark">
-    <div class="container-fluid padding fade">
-    <div class="row">
-
-      <div class="col-md-12">
-
-      <div class="col-12">
-        <hr class="light-100">
-        <div class="row">
-            <script language="JavaScript" type="text/javascript">
-            TrustLogo("https://sectigo.com/images/seals/sectigo_trust_seal_sm_2x.png", "SECEV", "none");
-            </script>
-            <div class="social-footer-icons">
+    <div class="container-fluid padding">
+      <hr class="light-100">
+      <div class="d-flex justify-content-between">
+        <div class="alignright">
+        </div>
+        <div class="text-center aligncenter">
+          <h5>&copy; 2021 ProximityRacing.com</h5>
+          <h5>Created by Chris Nosowsky</h5>
+        </div>
+        <div class="d-flex flex-column alignright mr-2">
+          <div>
                 <a class="fi" href="https://www.facebook.com/ProximityRacing" target="_blank"><i class="fo fab fa-facebook" aria-hidden="true"></i></a>
                 <a class="fi" href="https://www.twitter.com/ProximityRacing" target="_blank"><i class="fo fab fa-twitter" aria-hidden="true"></i></a>
                 <a class="fi" href="https://www.instagram.com/ProximityRacing" target="_blank"><i class="fo fab fa-instagram" aria-hidden="true"></i></a>
                 <a class="fi" href="https://www.youtube.com/channel/UCzIyawQKpJ5DRM-_TROvZJw" target="_blank"><i class="fo fab fa-youtube" aria-hidden="true"></i></a>
                 <a class="fi" href="https://www.twitch.tv/ProximityRacing" target="_blank"><i class="fo fab fa-twitch" aria-hidden="true"></i></a>
-            </div>
+          </div>
+          <div style="text-align: right;">
+            <form class="mt-2" action="https://www.paypal.com/donate" method="post" target="_blank">
+              <input type="hidden" name="hosted_button_id" value="HKC38Q6Q53M3L" />
+              <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
+              <img alt="" border="0" src="https://www.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1" />
+            </form>
+          </div>
         </div>
-        <div class="text-center mt-4">
-        <h5>&copy; 2021 ProximityRacing.com</h5>
-        <h5>Created by Chris Nosowsky</h5>
-        </div>
-      </div>
-    </div>  
+      </div> 
+
     </div>
   </footer>
 HTML;
-    }
-
+  }
 }
