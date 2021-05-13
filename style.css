@@ -21,6 +21,24 @@
     height: 415px;
 }
 
+.credit {
+    width: 100%;
+    text-align: left;
+}
+
+.before-colon{
+    font-weight: 700;
+}
+
+.after-colon{
+    font-weight: 200;
+    float: right;
+}
+
+p.last {
+    width: 100%;
+}
+
 .fixed7 {
     background-size: 130% !important;
     background-image: url(./img/ProximityTruck2.png);
