@@ -12,7 +12,7 @@ class CalculatorView {
         if(isset($_SESSION['error'])) {
             $error = $_SESSION['error'];
             $html .= <<<HTML
-            <p class="text-center mt-5">$error</p>
+            <h5 class="text-center mt-5">$error</h5>
 HTML;
         }
 

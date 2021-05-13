@@ -1,6 +1,6 @@
 <?php
     require 'lib/site.inc.php';
-    require 'lib/ProximityRacing\CalculatorView.php';
+    require 'lib/ProximityRacing/CalculatorView.php';
     $view = new ProximityRacing\GeneralView();
     $calculatorView = new ProximityRacing\CalculatorView();
 ?>

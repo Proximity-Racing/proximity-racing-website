@@ -10,7 +10,7 @@ if(isset($_POST['year']) && isset($_POST['irating']) && is_numeric($_POST['irati
     $_SESSION['calculatedValue'] = $result;
     $_SESSION['year'] = $_POST['year'];
 } else {
-    $_SESSION['error'] = "Please provide a number for iRating field";
+    $_SESSION['error'] = "Please provide a number in the iRating field";
 }
 
 header("Location: ../calculator.php");
