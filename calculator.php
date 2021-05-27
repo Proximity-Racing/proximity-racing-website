@@ -3,6 +3,14 @@
     require 'lib/ProximityRacing/CalculatorView.php';
     $view = new ProximityRacing\GeneralView();
     $calculatorView = new ProximityRacing\CalculatorView();
+
+    $ir = '';
+    $year = '';
+
+    if(isset($_SESSION['irating']) && isset($_SESSION['year'])) {
+        $ir = $_SESSION['irating'];
+        $year = $_SESSION['year'];
+    }
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -24,25 +32,25 @@
                 <form class="formstyle" action="post/calculator.php" method="POST">
                     <div class="form-group">
                         <label for="irating">Current iRating</label>
-                        <input type="text" class="form-control" id="irating" name="irating"
+                        <input type="text" class="form-control" id="irating" name="irating" value="<?php echo $ir; ?>"
                             placeholder="e.g. 1350" required>
                     </div>
                     <div class="form-group">
                         <label for="year">Year</label>
-                        <select class="form-control" aria-label="Year select" id="year" name="year" required>
-                            <option value="2020">2020</option>
-                            <option value="2019">2019</option>
-                            <option value="2018">2018</option>
-                            <option value="2017">2017</option>
-                            <option value="2016">2016</option>
-                            <option value="2015">2015</option>
-                            <option value="2014">2014</option>
-                            <option value="2013">2013</option>
-                            <option value="2012">2012</option>
+                        <select class="form-control" aria-label="Year select" id="year" name="year" value="<?php echo $year; ?>" required>
+                            <option <?php if ($year == '2020') { ?>selected="true" <?php }; ?>value="2020">2020</option>
+                            <option <?php if ($year == '2019') { ?>selected="true" <?php }; ?>value="2019">2019</option>
+                            <option <?php if ($year == '2018') { ?>selected="true" <?php }; ?>value="2018">2018</option>
+                            <option <?php if ($year == '2017') { ?>selected="true" <?php }; ?>value="2017">2017</option>
+                            <option <?php if ($year == '2016') { ?>selected="true" <?php }; ?>value="2016">2016</option>
+                            <option <?php if ($year == '2015') { ?>selected="true" <?php }; ?>value="2015">2015</option>
+                            <option <?php if ($year == '2014') { ?>selected="true" <?php }; ?>value="2014">2014</option>
+                            <option <?php if ($year == '2013') { ?>selected="true" <?php }; ?>value="2013">2013</option>
+                            <option <?php if ($year == '2012') { ?>selected="true" <?php }; ?>value="2012">2012</option>
                         </select>
                     </div>
                     <div>
-                        <button class="btn btn-primary" type="submit">Calculate</button>
+                        <button class="btn btn-primary" type="submit" name="calculate">Calculate</button>
                     </div>
                 </form>
 
