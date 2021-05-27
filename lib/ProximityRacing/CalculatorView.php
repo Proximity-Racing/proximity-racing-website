@@ -19,8 +19,9 @@ HTML;
         if(isset($_SESSION['year']) && isset($_SESSION['calculatedValue'])) {
             $res = $_SESSION['calculatedValue'];
             $year = $_SESSION['year'];
+            $irating = $_SESSION['irating'];
             $html .= <<<HTML
-            <h5 class="text-center mt-5">Your iRating in $year would be $res</h5>
+            <h5 class="text-center mt-5">With $irating iRating, your iRating in $year would be $res</h5>
 HTML;
         }
 

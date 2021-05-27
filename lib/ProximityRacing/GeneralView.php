@@ -6,6 +6,12 @@ class GeneralView
 {
   private $links = [];
 
+  private $dropdownLinks = [["analytics.php", "calculator.php"], ["contact.php", "apply.php", "sponsor.php"]];
+  private $dropdownLinksNames = [["Team Management", "iRating Calculator"], ["Contact Us", "Apply", "Become a Sponsor"]];
+
+  private $dropdownHeaderLinks = ["analytics.php", "contact.php"];
+  private $dropdownHeader = ["Analytics", "Contact"];
+
   public function __construct()
   {
     $this->addLink("about.php", "About");
@@ -13,7 +19,6 @@ class GeneralView
     $this->addLink("drivers.php", "Members");
     $this->addLink("gallery.php", "Gallery");
     $this->addLink("partners.php", "Partners");
-    $this->addLink("analytics.php", "Analytics");
   }
 
   public function presentHeader($title)
@@ -130,25 +135,39 @@ HTML;
 HTML;
     }
 
-    if ($activePage == "contact.php" || $activePage == "apply.php" || $activePage == "sponsor.php") {
-      $html .= '<li class="dropdown nav-item active">';
-    } else {
-      $html .= '<li class="dropdown nav-item">';
+    for ($i = 0; $i < count($this->dropdownLinks); $i++) {
+      if(in_array($activePage, $this->dropdownLinks[$i])) {
+        $html .= '<li class="dropdown nav-item active">';
+      } else {
+        $html .= '<li class="dropdown nav-item">';
+      }
+      $header = $this->dropdownHeader[$i];
+      $headerLink = $this->dropdownHeaderLinks[$i];
+      $html .= <<<HTML
+      <a href="$headerLink" data-toggle="dropdown" class="dropdown-toggle nav-link">$header</a>
+      <ul class="dropdown-menu" id="menu1">
+HTML;
+
+      for ($x = 0; $x < count($this->dropdownLinks[$i]); $x++) {
+        $text = $this->dropdownLinksNames[$i][$x];
+        $link = $this->dropdownLinks[$i][$x];
+        $html .= <<<HTML
+        <li><a class = "fo" href="$link">$text</a></li>
+HTML;
+      }
+
+      $html .= <<<HTML
+      </ul>
+    </li>
+HTML;
     }
 
     $html .= <<<HTML
-            <a href="./contact.php" data-toggle="dropdown" class="dropdown-toggle nav-link">Contact</a>
-            <ul class="dropdown-menu" id="menu1">
-              <li><a class = "fo" href="./contact.php">Contact Us</a></li>
-              <li><a class = "fo" href="./apply.php">Apply</a></li>
-              <li><a class = "fo" href="./sponsor.php">Become a Sponsor</a></li>
-            </ul>
-          </li>
-          </ul>
-        </div>
+    </ul>
+  </div>
 
-      </div>
-    </nav>
+</div>
+</nav>
 HTML;
     return $html;
   }
