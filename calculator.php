@@ -28,10 +28,11 @@
                 <h1>Proximity Racing iRating Calculator</h1>
             </div>
             <div class="col-md-6 offset-3">
+            <p><em>Note: Currently only supports Oval iRating. If demand persists, we will add road in the future.</em></p>
             <p class="mb-4">Ever wondered what your iRating would be like back then? Was the competition harder? Easier? We got the answers. We use web scrapers to grab precise data of drivers iRating over the years to build this calculator.</p>
                 <form class="formstyle" action="post/calculator.php" method="POST">
                     <div class="form-group">
-                        <label for="irating">Current iRating</label>
+                        <label for="irating">Current Oval iRating</label>
                         <input type="text" class="form-control" id="irating" name="irating" value="<?php echo $ir; ?>"
                             placeholder="e.g. 1350" required>
                     </div>
