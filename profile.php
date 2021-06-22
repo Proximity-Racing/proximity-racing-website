@@ -23,9 +23,7 @@ $view = new ProximityRacing\GeneralView();
         <a class="fo prof" href="register.php">Sign Up</a>
         <?php endif; ?>
     </div>
-    <?php 
-      include_once 'navbar.php';
-    ?>
+	<?php echo $view->presentNavbar(); ?>
 
 
 
